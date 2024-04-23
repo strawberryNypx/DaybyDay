@@ -93,5 +93,5 @@ este comando irá iniciar o servidor de desenvolvimento local usando o Vite. Ago
 - **clara** -> Branch designada para a desenvolvedora Clara Ferraz.
 - **rafael** -> Branch designada para o desenvolvedor Rafael Gomes.
 - **santhiago** -> Branch designada para o desenvolvedor Santhiago Santos.
-- **wesley** -> Branch designada para o desenvolvedor Wesley Felipe.
+- **wesley** -> Branch designada para o desenvolvedor Wesley Fellipe.
 
