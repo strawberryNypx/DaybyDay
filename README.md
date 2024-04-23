@@ -40,7 +40,7 @@ este comando irá iniciar o servidor de desenvolvimento local usando o Vite. Ago
   ```bash
   git commit -m "sua mensagem de commit aqui"
   ```
- * **Obs:** Mais abaixo existe uma sessão de commits semânticos que serão utilizados.
+ * **Obs:** Mais abaixo existe uma lista de commits semânticos que serão utilizados.
 4. **Envio do conteúdo para o repositório:**
   ```bash
   git  push origin nome-da-branch
