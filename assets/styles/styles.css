@@ -218,7 +218,7 @@ nav ul li:last-child {
     display: none;
  
 }
-/* Utilezem a class slide para customizar as tags h1, p ou img. Exemplo: .slide h1 | .slide p | .slide img */
+/* Utilezem a class slide para customizar o conteúdo dos slides */
 .slide{
     width: 20%;
     padding: 20px;
