@@ -45,7 +45,7 @@ este comando irá iniciar o servidor de desenvolvimento local usando o Vite. Ago
   ```bash
   git  push origin nome-da-branch
   ```
-5. **Para acessar as e navegar entre as branches:**
+5. **Para acessar e navegar entre as branches:**
   ```bash
   git checkout nome_da_branch -> para trocar de branch.
   git checkout -b nome_da_branch  -> criação de uma nova branch.
