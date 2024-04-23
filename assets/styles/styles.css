@@ -371,4 +371,128 @@ nav ul li:last-child {
     }
 }
 
+#sub-title-area {
+    margin-top: 5px;
+}
 
+#sub-title-background {
+    background-color: #FF4646;
+    width: 260px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.sub-title {
+    display: inline-block;
+}
+
+.method-title {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+#method-number1 {
+    background-color: #FF4646;
+    width: 28px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 40px;    
+}
+
+#method-number2 {
+    background-color: #FF4646;
+    width: 28px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 50px;    
+}
+
+#method-number3 {
+    background-color: #FF4646;
+    width: 28px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 50px;    
+}
+
+.method-content {
+    display: inline-block;
+}
+
+#method-info1 {
+    display: inline-block;
+    width: 550px;
+}
+
+#method-info2 {
+    display: inline-block;
+    width: 550px;
+}
+
+#method-info3 {
+    display: inline-block;
+    width: 550px;
+}
+
+#elementos {
+    display: inline-block;
+}
+
+#circulo {
+    background-color: #FF4646;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding-top: 45px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+}
+
+.areas-elementos {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.predecessor {
+    display: inline-block;
+    width: 200px;
+}
+
+.predecessor-img {
+    display: inline-block;
+    padding: 10px;
+}
+
+#direito {
+    margin-left: 45px;
+}
+
+#esquerdo {
+    margin-right: 45px;
+}
+
+#imagem1 {
+    display: inline-block;
+}
+
+#imagem2 {
+    display: inline-block;
+}
+
+#linha3 {
+    width: 200px;
+    display: inline-block;
+}
+
+#linha4 {
+    width: 200px;
+    display: inline-block;
+}
+
+#div1 {
+    margin-bottom: 40px;
+}
+
+#div3 {
+    margin-bottom: 40px;
+}
