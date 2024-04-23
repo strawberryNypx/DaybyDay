@@ -45,6 +45,11 @@ este comando irá iniciar o servidor de desenvolvimento local usando o Vite. Ago
   ```bash
   git  push origin nome-da-branch
   ```
+5. **Para acessar as e navegar entre as branches:**
+  ```bash
+  git checkout nome_da_branch -> para trocar de branch.
+  git checkout -b nome_da_branch  -> criação de uma nova branch.
+  ```
 ## Padrão de commits a serem seguidos
 
 - **Feat:** Adição de uma nova funcionalidade.
@@ -90,9 +95,3 @@ este comando irá iniciar o servidor de desenvolvimento local usando o Vite. Ago
 - **santhiago** -> Branch designada para o desenvolvedor Santhiago Santos.
 - **wesley** -> Branch designada para o desenvolvedor Wesley Felipe.
 
-
-**Para acessar as e navegar entre as branches:**
-```bash
-git checkout nome_da_branch -> para trocar de branch.
-git checkout -b nome_da_branch  -> criação de uma nova branch.
-```
