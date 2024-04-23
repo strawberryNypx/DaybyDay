@@ -318,10 +318,12 @@ nav ul li:last-child {
 /*"Grid" dos serviços*/
 .fakegrid {
     display: flex;
+    align-items: center;
+    justify-content: center;
     border:1px solid #495BFB;
     border-top: none;
-    padding: 2rem;
-    padding-left: 2.5rem;
+    padding: 3rem;
+    gap: 7rem;
 }
 .fakegrid .left-side, .fakegrid .right-side {
     text-align: center;
@@ -335,9 +337,6 @@ nav ul li:last-child {
     width: 60px;
     border-radius: 50%;
 }
-/* .fakegrid .left-side p, .fakegrid .right-side p {
-    width: 250px;
-} <-------COM ISSO AQUI FICA MEIO TORTO, MAS VÊ SE É MELHOR OU NÃO*/
 /* Telas menores */
 @media screen and (max-width: 768px) {
     .container-header{
