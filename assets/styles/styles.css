@@ -34,6 +34,7 @@ section {
     align-items: center;
     position: fixed;
     margin: 20px 70px 20px 40px;
+    z-index: 1;
 }
 
 nav {
@@ -60,97 +61,6 @@ nav ul li a {
 nav ul li:last-child {
     margin-right: 0;
 }
-
-/* Conteúdo do site */
-.container-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.container-content .picture {
-    max-width: 100%;
-    align-items: center;
-}
-
-.info .title {
-    font-family: 'Julius Sans One', sans-serif;
-    margin-right: auto;
-    font-size: 40px;
-    width: 273px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-shadow: 0px 4px 4px #0000004d;
-}
-
-.info .description {
-    font-family: 'Karma', sans-serif;
-    width: 500px;
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-.info a {
-    text-decoration: none;
-    margin-left: 10px;
-    color: #000;
-}
-
-/* Botões */
-.info .btn {
-    width: 159px;
-    height: 49px;
-    border-radius: 32px;
-    background-color: #FF4646;
-    color: #fff;
-    border: none;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.info .btn-download {
-    background-color: #495BFB;
-    width: 159px;
-    height: 49px;
-    border-radius: 32px;
-    color: #fff;
-    border: none;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-/* Telas menores */
-@media screen and (max-width: 768px) {
-    .container-header{
-        width: 100%;
-    }
-    nav{
-        width: 80%;
-    }
-    .container-content {
-        height: 100vh;
-        justify-content: center;
-    }
-    .container-content .picture {
-        display: none;
-    }
-
-    .info .title {
-        max-width: 80vw;
-    }
-
-    .info .description {
-        max-width: 80vw;
-    }
-
-    .info .btn {
-        margin-bottom: 40px;
-    }
-}
-
 
 /* Mobile-Menu */
 .nav-link {
@@ -249,3 +159,190 @@ nav ul li:last-child {
         display: block;
     }
 }
+
+/* Conteúdo do site */
+.container-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-content .picture {
+    max-width: 100%;
+    align-items: center;
+}
+
+.info .title {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-right: auto;
+    font-size: 40px;
+    width: 273px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-shadow: 0px 4px 4px #0000004d;
+}
+
+.info .description {
+    font-family: 'Karma', sans-serif;
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #000;
+}
+
+/* css do carrosel */
+.slider {
+    position: relative;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+.slides{
+    display: flex;
+    align-items: center;
+    width: 500%;
+    height: 100vh;
+    display: flex;
+    
+}
+.slides input{
+    display: none;
+ 
+}
+/* Utilezem a class slide para customizar as tags h1, p ou img. Exemplo: .slide h1 | .slide p | .slide img */
+.slide{
+    width: 20%;
+    padding: 20px;
+    transition: 2s;
+    text-align: justify;
+    
+}
+
+/* css para a navegação manual e automatico */
+.navigation-manual,
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 100px;
+   
+}
+
+
+.manual-btn,
+.navigation-auto div {
+    border: 2px solid rgba(0, 0, 0, 0.421);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.manual-btn:not(:last-child),
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px; 
+}
+
+.manual-btn:hover,
+.navigation-auto div:hover {
+    background: #000;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #000;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #000;
+}
+
+
+/* Botões */
+.info .btn {
+    width: 159px;
+    height: 49px;
+    border-radius: 32px;
+    background-color: #FF4646;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.info .btn-download {
+    background-color: #495BFB;
+    width: 159px;
+    height: 49px;
+    border-radius: 32px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Telas menores */
+@media screen and (max-width: 768px) {
+    .container-header{
+        width: 100%;
+    }
+    nav{
+        width: 80%;
+    }
+    .container-content {
+        height: 100vh;
+        justify-content: center;
+    }
+    .navigation-manual,
+    .navigation-auto {
+        width: 100%;
+        
+    }
+    .container-content .picture {
+        display: none;
+    }
+
+    .info .title {
+        max-width: 80vw;
+    }
+
+    .info .description {
+        max-width: 80vw;
+    }
+
+    .info .btn {
+        margin-bottom: 40px;
+    }
+}
+
+
