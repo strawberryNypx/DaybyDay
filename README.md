@@ -13,7 +13,7 @@
 
 1. **Clone o repositorio:**
 ```bash 
-git clone Template https://github.com/strawberryNypx/DaybyDay.git 
+git clone -b Template https://github.com/strawberryNypx/DaybyDay.git 
 ```
 2. **Instalar as depêndencias:**
 ```bash
