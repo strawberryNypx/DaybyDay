@@ -15,12 +15,13 @@ html {
 }
 
 /* Scroll-Snap */
-.container{
+.container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
     height: 100vh;
 }
+
 section {
     scroll-snap-align: start;
     height: 100vh;
@@ -82,16 +83,20 @@ nav ul li:last-child {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
+
     nav ul li {
         display: none;
     }
+
     .login-button {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
         border-radius: 5px;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
@@ -99,10 +104,11 @@ nav ul li:last-child {
         background-color: #c6c6cc;
         outline: none;
     }
-    
+
     .mobile-menu-icon img {
         pointer-events: none;
     }
+
     .mobile-menu {
         display: none;
         position: fixed;
@@ -123,16 +129,16 @@ nav ul li:last-child {
         cursor: pointer;
         outline: none;
     }
-    
+
     .close-icon-container button:hover {
-        background-color: transparent; 
+        background-color: transparent;
     }
-    
+
     .close-icon-container img {
-        pointer-events: none; 
+        pointer-events: none;
         border-radius: 5px;
     }
-    
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -142,19 +148,19 @@ nav ul li:last-child {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     .mobile-menu .nav-item {
         padding-top: 1.2rem;
     }
-    
+
     .mobile-menu .login-button {
         padding: 1rem 2rem;
     }
-    
+
     .mobile-menu .login-button button {
         width: 100%;
     }
-    
+
     .open {
         display: block;
     }
@@ -205,27 +211,30 @@ nav ul li:last-child {
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
-    
+
 }
-.slides{
+
+.slides {
     display: flex;
     align-items: center;
     width: 500%;
     height: 100vh;
     display: flex;
-    
+
 }
-.slides input{
+
+.slides input {
     display: none;
- 
+
 }
+
 /* Utilezem a class slide para customizar as tags h1, p ou img. Exemplo: .slide h1 | .slide p | .slide img */
-.slide{
+.slide {
     width: 20%;
     padding: 20px;
     transition: 2s;
     text-align: justify;
-    
+
 }
 
 /* css para a navegação manual e automatico */
@@ -239,7 +248,7 @@ nav ul li:last-child {
     right: 0;
     margin: auto;
     bottom: 100px;
-   
+
 }
 
 .manual-btn,
@@ -253,7 +262,7 @@ nav ul li:last-child {
 
 .manual-btn:not(:last-child),
 .navigation-auto div:not(:last-child) {
-    margin-right: 40px; 
+    margin-right: 40px;
 }
 
 .manual-btn:hover,
@@ -261,29 +270,31 @@ nav ul li:last-child {
     background: #000;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
+
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: -40%;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 {
     background: #000;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+#radio2:checked~.navigation-auto .auto-btn2 {
     background: #000;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+#radio3:checked~.navigation-auto .auto-btn3 {
     background: #000;
 }
+
 /* Botões */
 .info .btn {
     width: 159px;
@@ -296,6 +307,7 @@ nav ul li:last-child {
     font-weight: 400;
     cursor: pointer;
 }
+
 .info .btn-download {
     background-color: #495BFB;
     width: 159px;
@@ -307,23 +319,41 @@ nav ul li:last-child {
     font-weight: 400;
     cursor: pointer;
 }
+
 /*"Grid" dos serviços*/
+.slide.first {
+    position: relative;
+}
+
+.slide.first h1 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background-color: white;
+}
+
 .fakegrid {
     display: flex;
-    border:1px solid #495BFB;
-    border-top: none;
+    border: 1px solid #495BFB;
+    /*border-top: none;*/
     padding: 1rem;
     width: fit-content;
 }
-.fakegrid .left-side, .fakegrid .right-side {
+
+.fakegrid .left-side,
+.fakegrid .right-side {
     text-align: center;
 }
-.fakegrid .left-side p, .fakegrid .right-side p,
-.fakegrid .left-side img, .fakegrid .right-side img {
+
+.fakegrid .left-side p,
+.fakegrid .right-side p,
+.fakegrid .left-side img,
+.fakegrid .right-side img {
     margin-top: 1rem;
 }
 
-.fakegrid .left-side, .fakegrid .right-side {
+.fakegrid .left-side,
+.fakegrid .right-side {
     padding-left: 4rem;
     padding-right: 3rem;
 }
@@ -332,23 +362,28 @@ nav ul li:last-child {
     width: 60px;
     border-radius: 50%;
 }
+
 /* Telas menores */
 @media screen and (max-width: 768px) {
-    .container-header{
+    .container-header {
         width: 100%;
     }
-    nav{
+
+    nav {
         width: 80%;
     }
+
     .container-content {
         height: 100vh;
         justify-content: center;
     }
+
     .navigation-manual,
     .navigation-auto {
         width: 100%;
-        
+
     }
+
     .container-content .picture {
         display: none;
     }
@@ -376,6 +411,7 @@ nav ul li:last-child {
     text-align: center;
     border-radius: 25px;
 }
+
 .slide2 {
     display: flex;
     flex-direction: column;
@@ -395,7 +431,7 @@ nav ul li:last-child {
     width: 30px;
     border-radius: 50%;
     text-align: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .items-div {
