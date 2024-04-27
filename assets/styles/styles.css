@@ -553,4 +553,10 @@ nav ul li:last-child {
         margin-bottom: 0;
         font-size: 18px;
     }
+    
+    .fakegrid .left-side,
+    .fakegrid .right-side {
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
 }
