@@ -198,6 +198,10 @@ nav ul li:last-child {
     text-indent: 3rem;
 }
 
+#home .info .description {
+    text-indent: 0;
+}
+
 .info a {
     text-decoration: none;
     margin-left: 10px;
