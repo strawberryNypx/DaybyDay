@@ -545,4 +545,8 @@ nav ul li:last-child {
     .info .title {
         margin-top: 5.5rem;
     }
+    .info .description {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
 }
