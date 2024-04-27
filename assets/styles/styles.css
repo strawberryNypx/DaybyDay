@@ -416,7 +416,9 @@ nav ul li:last-child {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-left: 74px;
 }
+
 
 .method-title {
     text-indent: 3rem;
@@ -424,6 +426,11 @@ nav ul li:last-child {
 
 .sub-title {
     display: inline-block;
+    
+}
+
+#second-title {
+    margin-bottom: 3px;
 }
 
 .method-number {
@@ -437,7 +444,6 @@ nav ul li:last-child {
 .items-div {
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
 
 .method-content {
@@ -445,8 +451,23 @@ nav ul li:last-child {
 }
 
 .method-info {
-    display: inline-block;
+    display: block;
     width: fit-content;
+    max-width: 600px;
+}
+
+.div-numeros {
+    z-index: 1;
+    position: absolute;
+}
+
+.div-textos {
+    margin-left: 16px;
+}
+
+
+.slide3 {
+    margin-left: 30px; 
 }
 
 #elementos {
@@ -470,12 +491,12 @@ nav ul li:last-child {
 
 .predecessor {
     display: inline-block;
-    width: 200px;
 }
 
 .predecessor-img {
     display: inline-block;
     padding: 10px;
+    border-radius: 100px;
 }
 
 #direito {
@@ -492,6 +513,14 @@ nav ul li:last-child {
 
 #imagem2 {
     display: inline-block;
+}
+
+#linha1 {
+    margin-bottom: 10px;
+}
+
+#linha2 {
+    margin-bottom: 10px;
 }
 
 #linha3 {
