@@ -554,6 +554,10 @@ nav ul li:last-child {
         font-size: 18px;
     }
     
+    .slide.first .title {
+        font-size: 35px;
+    }
+
     .fakegrid .left-side,
     .fakegrid .right-side {
     padding-left: 2rem;
