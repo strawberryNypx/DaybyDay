@@ -562,5 +562,15 @@ nav ul li:last-child {
     .fakegrid .right-side {
     padding-left: 2rem;
     padding-right: 1rem;
-}
+    }
+
+    #sub-title-background {
+        margin-bottom: 0;
+        margin-top: 8rem;
+    }
+
+    .items-div {
+        width: 310px;
+        margin-left: 0;
+    }
 }
