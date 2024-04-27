@@ -540,3 +540,7 @@ nav ul li:last-child {
 #div3 {
     margin-bottom: 40px;
 }
+/* Responsividade 425px*/
+@media screen and (max-width: 425px) {
+    
+}
