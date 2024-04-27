@@ -542,5 +542,7 @@ nav ul li:last-child {
 }
 /* Responsividade 425px*/
 @media screen and (max-width: 425px) {
-    
+    .info .title {
+        margin-top: 5.5rem;
+    }
 }
