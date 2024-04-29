@@ -16,7 +16,19 @@
                     <li><a href="#home">INÍCIO</a></li>
                     <li><a href="#classes">NOSSOS SERVIÇOS</a></li>
                     <li><a href="#ebook">E-BOOK</a></li>
-                    <li><a href="#about">SOBRE</a></li>
+                    <li class="sobre dropdown">
+                        <div class="drop-label">
+                            <span>SOBRE</span> 
+                            <button onclick="menuDropdown()" class="dropdown-btn">
+                                <img src="assets/img/down-arrow.png"  class="drop-icon" alt="dropdown arrow">
+                            </button>
+                        </div>
+                        <ul class="drop-content">
+                            <li><a href="#about">BIO</a></li>
+                            <li><a href="#feedback">FEEDBACK DOS ALUNOS</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                </li>
                 </ul>
             </div>
             <div class="mobile-menu-icon">
@@ -32,6 +44,8 @@
                 <li class="nav-item"><a href="#classes" class="nav-link">NOSSOS SERVIÇOS</a></li>
                 <li class="nav-item"><a href="#ebook" class="nav-link">E-BOOK</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">SOBRE</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">FEEDBACK DOS ALUNOS</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
             </ul>
         </div>
     </header>
@@ -174,14 +188,49 @@
                 </div>
             </section>
             <section id="about" class="container-content">
-                <div class="picture">
-                    <img class="logo" src="https://dummyimage.com/179x432/#c6c6cc/fff" alt="">
-                </div>
-                <div class="info">
+                <div class="description-1">
                     <h1 class="title">SOBRE</h1>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, deleniti? Sunt, ratione animi sequi rerum voluptatem eum laboriosam. Magnam consectetur mollitia quos modi, cum quae quo voluptatum earum exercitationem deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid laudantium commodi doloribus blanditiis, porro dignissimos doloremque quam maiores mollitia culpa reiciendis perferendis sit, ratione amet quibusdam cupiditate tempore molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellendus saepe nostrum ipsum fugit. Mollitia, modi. Omnis, cumque labore, veniam deleniti nihil maxime amet quos pariatur atque cum, eaque vitae?</p>
+                    <div>
+                        <h2>Meu nome é Amanda. Nasci em João Pessoa na Paraíba e sempre fui apaixonada por Inglês</h2>
+                        <p><span>Como uma boa Libriana indecisa, </span>optei por seguir os passos do meu pai na Engenharia Civil, onde sou formada pela UFPB, mas lá dentro eu sempre soube que o Inglês era a minha <span class="paixao">paixão.</span></h3>
+                        <p><span>Morei 1 ano na Austrália</span> durante a minha graduação. Lá tive a certeza que era com isso que eu queria trabalhar e retornei ao Brasil para iniciar a minha carreira como Professora de Inglês.</p>
+                    </div>
+
+                </div>
+                <div class="picture">
+                    <img class="canguru" src="assets/img/canguru.JPG" alt="">
+                </div>
+                <div class="curiosidades">
+                    <h2>Curiosidades sobre mim</h2>
+                    <div>                    
+                        <p>Adoro ver programas de entrevistas, séries, filmes e desenhos animados;</p>
+                        <p>Minha comida favorita é Sopa;</p>
+                        <p>Sou fascinada pela cultura e culinária Oriental, principalmente a Japonesa;</p>
+                        <p>Não recuso um docinho depois do almoço;</p>
+                        <p>Amo animais e tenho um cachorrinho chamado Costelinha;</p>
+                        <p>Não suporto frio, como boa paraibana;</p>
+                        <p>Amo viajar para ligares exóticos e com muita natureza.</p>
+                    </div>
                 </div>
             </section>
+            <section id="feedback" class="container-content">
+                <h3>feedback</h3>
+            </section>
+            <section id="faq"class="container-content">
+                <h3>FAQ</h3>
+                <div class="faq-box" >
+                    <ul>
+                        <li class="pergunta">
+                            <details>
+                                <summary><h3>Pergunta?</h3></summary>
+                                <p class="resposta">resposta</p>
+                                </details>
+                        </li>
+                </ul>
+                    
+                </div>
+            </section>
+
         </div>
     </main>
     <script src="./assets/scripts/script.js"></script>
