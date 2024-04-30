@@ -341,7 +341,7 @@ nav ul li:last-child {
 @media screen and (min-width: 1200px) {
     .form-container {
         width: 55vw;
-        height: 75vh;
+        height: 70vh;
     }
     
     .form-img {
@@ -377,6 +377,7 @@ nav ul li:last-child {
     }
 
     .slide-form {
+        height: 65%;
         overflow: hidden;
     }
 }
