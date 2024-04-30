@@ -428,15 +428,6 @@ nav ul li:last-child {
     text-indent: 3rem;
 }
 
-.sub-title {
-    display: inline-block;
-    
-}
-
-#second-title {
-    margin-bottom: 3px;
-}
-
 .method-number {
     background-color: #FF4646;
     width: 30px;
@@ -450,20 +441,13 @@ nav ul li:last-child {
     align-items: center;
 }
 
-.method-content {
-    display: inline-block;
-}
 
 .method-info {
-    display: block;
+
     width: fit-content;
     max-width: 600px;
 }
 
-.div-numeros {
-    z-index: 1;
-    position: absolute;
-}
 
 .div-textos {
     margin-left: 16px;
@@ -572,5 +556,53 @@ nav ul li:last-child {
     .items-div {
         width: 310px;
         margin-left: 0;
+    }
+}
+/* 375px */
+@media screen and (max-width: 375px) {
+    .fakegrid .left-side,
+    .fakegrid .right-side {
+    padding-left: 0.5rem;
+    padding-right: 0.2rem;
+    }
+
+    .slide.first .title {
+        font-size: 25px;
+    }
+    .slide2 .title {
+        width: 400px;
+        margin: 0;
+        margin-top: 4rem;
+        font-size: 25px;
+        margin-right: 3rem;
+    }
+    #sub-title-background {
+        margin: 0;
+        width: fit-content;
+        padding: 5px;
+    }
+    .slide2 {
+        gap: 0;
+        margin: 0;
+    }
+    .method-title {
+        font-size: 12px;
+        margin-right: 3rem;
+    }
+    .sub-title {
+        font-size: 12px;
+        margin-right: 3rem;
+    }
+    .method-info {
+        font-size: 15px;
+        padding: 5px;
+        margin: 0;
+        width: fit-content;
+    }
+    .div-textos {
+        margin: 0;
+    }
+    .method-number {
+        margin-right: 3rem;
     }
 }
