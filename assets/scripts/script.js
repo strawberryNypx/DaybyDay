@@ -107,3 +107,11 @@ function mostrarNivelIngles() {
         nivelIngles.style.display = "none";
     }
 }
+
+var inputTel = document.getElementById('telefone');
+
+inputTel.addEventListener('input', function() {
+    let telFormatado = this.value.replace(/\D/g, '');
+    telFormatado = telFormatado.replace(/(\d{2})(\d{1})(\d{1,4})(\d{1,4})/, '($1) $2 $3-$4');
+    this.value = telFormatado;
+});
