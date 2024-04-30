@@ -114,7 +114,7 @@ nav ul li:last-child {
 .slide-form {
     padding: .75rem;
     overflow-y: scroll;
-    height: 60%;
+    height: 55%;
 }
 
 #nivel-ingles {
@@ -216,7 +216,7 @@ nav ul li:last-child {
 
 .btn-form {
     display: flex;
-    margin: 1.25rem 0;
+    margin: 1rem 0;
     justify-content: space-evenly;
     flex-direction: column;
     gap: .75rem;
