@@ -251,8 +251,7 @@ nav ul li:last-child {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 100px;
-
+    bottom: 10px;
 }
 
 .manual-btn,
