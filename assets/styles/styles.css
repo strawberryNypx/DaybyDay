@@ -423,6 +423,9 @@ nav ul li:last-child {
     margin-left: 74px;
 }
 
+.slide2 .title {
+    margin-top: 2rem;
+}
 
 .method-title {
     text-indent: 3rem;
@@ -530,6 +533,9 @@ nav ul li:last-child {
 }
 /* Responsividade 425px*/
 @media screen and (max-width: 425px) {
+    .slide.first {
+        margin-top: 4rem;
+    }
     .info .title {
         margin-top: 5.5rem;
     }
@@ -556,6 +562,45 @@ nav ul li:last-child {
     .items-div {
         width: 310px;
         margin-left: 0;
+    }
+    .slide2 .title {
+        width: 400px;
+        margin: 0;
+        margin-top: 4rem;
+        font-size: 25px;
+        margin-right: 3rem;
+    }
+    #sub-title-background {
+        margin: 0;
+        width: fit-content;
+        padding: 5px;
+    }
+    .slide2 {
+        gap: 0;
+        margin: 0;
+    }
+    .method-title {
+        font-size: 12px;
+        margin-right: 3rem;
+    }
+    .sub-title {
+        font-size: 12px;
+        margin-right: 3rem;
+    }
+    .items-div {
+        width:fit-content;
+    }
+    .method-info {
+        font-size: 15px;
+        padding: 5px;
+        margin: 0;
+    }
+    .div-textos {
+        margin: 0;
+        width: 300px;
+    }
+    .method-number {
+        margin-right: 1rem;
     }
 }
 /* 375px */
@@ -585,6 +630,9 @@ nav ul li:last-child {
         gap: 0;
         margin: 0;
     }
+    .items-div {
+        width: 300px;
+    }
     .method-title {
         font-size: 12px;
         margin-right: 3rem;
@@ -594,15 +642,32 @@ nav ul li:last-child {
         margin-right: 3rem;
     }
     .method-info {
-        font-size: 15px;
+        font-size: 14px;
         padding: 5px;
-        margin: 0;
-        width: fit-content;
-    }
-    .div-textos {
         margin: 0;
     }
     .method-number {
-        margin-right: 3rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .fakegrid .left-side,
+    .fakegrid .right-side {
+    padding-left: 0.2rem;
+    padding-right: 0
+    }
+
+    .items-div {
+        width: 250px;
+    }
+    .method-info {
+        font-size: 13px;
+    }
+    .method-number {
+        margin-right: 1rem;
+    }
+    .slide2 .title {
+        margin-top: 4.5rem;
     }
 }
