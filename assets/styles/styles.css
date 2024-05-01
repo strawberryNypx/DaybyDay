@@ -198,6 +198,10 @@ nav ul li:last-child {
     text-indent: 3rem;
 }
 
+#home .info .description {
+    text-indent: 0;
+}
+
 .info a {
     text-decoration: none;
     margin-left: 10px;
@@ -234,7 +238,7 @@ nav ul li:last-child {
     padding: 20px;
     transition: 2s;
     text-align: justify;
-
+    
 }
 
 /* css para a navegação manual e automatico */
@@ -247,8 +251,7 @@ nav ul li:last-child {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 100px;
-
+    bottom: 10px;
 }
 
 .manual-btn,
@@ -413,24 +416,19 @@ nav ul li:last-child {
 }
 
 .slide2 {
-    display: flex;
-    flex-direction: column;
+    width: 610px;
     gap: 1rem;
-    margin-left: 74px;
-}
-
-
-.method-title {
-    text-indent: 3rem;
-}
-
-.sub-title {
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
-#second-title {
-    margin-bottom: 3px;
+.slide2 .title {
+    margin-top: 2rem;
+}
+
+.method-title {
+    text-indent: 3rem;
 }
 
 .method-number {
@@ -446,15 +444,17 @@ nav ul li:last-child {
     align-items: center;
 }
 
-.method-content {
-    display: inline-block;
-}
 
 .method-info {
-    display: block;
     width: fit-content;
     max-width: 600px;
 }
+
+
+.div-textos {
+    margin-left: 16px;
+}
+
 
 .div-numeros {
     z-index: 1;
@@ -465,9 +465,6 @@ nav ul li:last-child {
     margin-left: 16px;
 }
 
-.slide3 {
-    
-}
 
 #circle {
     background-color: #FF4646;
@@ -491,6 +488,10 @@ nav ul li:last-child {
 .detail-text {
     width: 200px;
     text-align: center;
+}
+
+.detail-img {
+    border-radius: 50%;
 }
 
 .top-left {
@@ -525,55 +526,49 @@ nav ul li:last-child {
     padding-right: 1rem;
     }
 
-    #sub-title-background {
-        margin-bottom: 0;
-        margin-top: 8rem;
-    }
-
-    .items-div {
-        width: 310px;
-        margin-left: 0;
-    }
-    .slide2 .title {
-        width: 400px;
-        margin: 0;
-        margin-top: 4rem;
-        font-size: 25px;
-        margin-right: 3rem;
-    }
-    #sub-title-background {
-        margin: 0;
-        width: fit-content;
-        padding: 5px;
-    }
     .slide2 {
-        gap: 0;
-        margin: 0;
-    }
-    .method-title {
-        font-size: 12px;
-        margin-right: 3rem;
-    }
-    .sub-title {
-        font-size: 12px;
-        margin-right: 3rem;
-    }
-    .items-div {
-        width:fit-content;
-    }
-    .method-info {
-        font-size: 15px;
-        padding: 5px;
-        margin: 0;
-    }
-    .div-textos {
-        margin: 0;
-        width: 300px;
-    }
-    .method-number {
-        margin-right: 1rem;
+        width: fit-content;
+        max-width: 425px;
+        height: fit-content;
     }
 
+    .slide3 {
+        height: fit-content;
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle-text {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    .detail-text {
+        font-size: 13px;
+        max-width: 120px;
+        text-align: center;
+        
+    }
+
+    .top-left {
+        align-items: end;
+    }
+
+    .top-right {
+        float: right;
+    }
+
+    .corner1 {
+        margin-top: 0.9rem;
+    }
 }
     
 /* 375px */
@@ -585,42 +580,102 @@ nav ul li:last-child {
     }
 
     .slide.first .title {
-        font-size: 25px;
-    }
-    .slide2 .title {
-        width: 400px;
-        margin: 0;
-        margin-top: 4rem;
-        font-size: 25px;
-        margin-right: 3rem;
-    }
-    #sub-title-background {
-        margin: 0;
-        width: fit-content;
-        padding: 5px;
+        font-size: 22px;
     }
     .slide2 {
-        gap: 0;
-        margin: 0;
+        width: fit-content;
+        max-width: 375px;
+        height: fit-content;
+        max-height: 3750px;
+        gap: 1rem;
     }
-    .items-div {
-        width: 300px;
+    
+    .title {
+        font-size: 24px;
     }
-    .method-title {
-        font-size: 12px;
-        margin-right: 3rem;
-    }
+
     .sub-title {
-        font-size: 12px;
-        margin-right: 3rem;
+        display: inline-block;
     }
+
+    #sub-title-background {
+        font-size: 14px;
+        width: fit-content;
+        max-width: 180px;
+        display: inline-block;
+    }
+
+    #second-title {
+        font-size: 12px;
+        max-width: 180px;
+        line-height: 20px;
+        display: inline-block;
+    }
+
+    .method-title {
+        font-size: 15px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .div-numeros {
+        padding-left: 7px;
+    }
+
+    .method-number {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+        width: 18px;
+    }
+
+    .div-textos {
+        width: fit-content;
+        max-width: 350px;
+        height: fit-content;
+        max-height: 400px;
+    }
+
     .method-info {
         font-size: 14px;
-        padding: 5px;
-        margin: 0;
     }
-    .method-number {
-        margin-right: 0.5rem;
+
+    .slide3 {
+        height: fit-content;
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle-text {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    .detail-text {
+        font-size: 13px;
+        max-width: 120px;
+        text-align: center;
+        
+    }
+
+    .top-left {
+        align-items: end;
+    }
+
+    .top-right {
+        float: right;
+    }
+
+    .corner1 {
+        margin-top: 0.9rem;
     }
 }
 
