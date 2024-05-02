@@ -437,6 +437,7 @@ nav ul li:last-child {
     border-radius: 50%;
     text-align: center;
     justify-content: center;
+    z-index: 0;
 }
 
 .items-div {
@@ -457,7 +458,7 @@ nav ul li:last-child {
 
 
 .div-numeros {
-    z-index: 1;
+    z-index: 0;
     position: absolute;
 }
 
@@ -705,4 +706,8 @@ nav ul li:last-child {
     .slide2 .title {
         margin-top: 4.5rem;
     }
+}
+
+.mobile-menu {
+    z-index: 1;
 }
