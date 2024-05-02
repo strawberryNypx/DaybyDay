@@ -238,7 +238,7 @@ nav ul li:last-child {
     padding: 20px;
     transition: 2s;
     text-align: justify;
-
+    
 }
 
 /* css para a navegação manual e automatico */
@@ -402,8 +402,6 @@ nav ul li:last-child {
     .info .btn {
         margin-bottom: 40px;
     }
-
-
 }
 
 #sub-title-area {
@@ -418,10 +416,11 @@ nav ul li:last-child {
 }
 
 .slide2 {
-    display: flex;
-    flex-direction: column;
+    width: 610px;
     gap: 1rem;
-    margin-left: 74px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .slide2 .title {
@@ -457,82 +456,55 @@ nav ul li:last-child {
 }
 
 
-.slide3 {
-    margin-left: 30px; 
+.div-numeros {
+    z-index: 1;
+    position: absolute;
 }
 
-#elementos {
-    display: inline-block;
+.div-textos {
+    margin-left: 16px;
 }
 
-#circulo {
+
+#circle {
     background-color: #FF4646;
     text-align: center;
     width: 120px;
     height: 120px;
-    padding-top: 45px;
     border-radius: 100px;
-    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.areas-elementos {
+#circle-text {
+    line-height: 120px;
+}
+
+.detail {
     display: inline-block;
-    margin-top: 30px;
+
 }
 
-.predecessor {
-    display: inline-block;
-}
-
-.predecessor-img {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 100px;
-}
-
-#direito {
-    margin-left: 45px;
-}
-
-#esquerdo {
-    margin-right: 45px;
-}
-
-#imagem1 {
-    display: inline-block;
-}
-
-#imagem2 {
-    display: inline-block;
-}
-
-#linha1 {
-    margin-bottom: 10px;
-}
-
-#linha2 {
-    margin-bottom: 10px;
-}
-
-#linha3 {
+.detail-text {
     width: 200px;
-    display: inline-block;
+    text-align: center;
 }
 
-#linha4 {
-    width: 200px;
-    display: inline-block;
+.detail-img {
+    border-radius: 50%;
 }
 
-#div1 {
-    margin-bottom: 40px;
+.top-left {
+    align-items: end;
+
 }
 
-#div3 {
-    margin-bottom: 40px;
+.top-right {
+    float: right;
 }
+
 /* Responsividade 425px*/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .slide.first {
         margin-top: 4rem;
     }
@@ -554,57 +526,53 @@ nav ul li:last-child {
     padding-right: 1rem;
     }
 
-    #sub-title-background {
-        margin-bottom: 0;
-        margin-top: 8rem;
+    .slide2 {
+        width: fit-content;
+        max-width: 425px;
+        height: fit-content;
     }
 
-    .items-div {
-        width: 310px;
-        margin-left: 0;
+    .slide3 {
+        height: fit-content;
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .slide2 .title {
-        width: 400px;
-        margin: 0;
-        margin-top: 4rem;
-        font-size: 25px;
-        margin-right: 3rem;
+
+    #circle {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    #sub-title-background {
-        margin: 0;
-        width: fit-content;
-        padding: 5px;
+
+    #circle-text {
+        font-size: 18px;
+        line-height: 70px;
     }
-    .slide2 {
-        gap: 0;
-        margin: 0;
+
+    .detail-text {
+        font-size: 13px;
+        max-width: 120px;
+        text-align: center;
+        
     }
-    .method-title {
-        font-size: 12px;
-        margin-right: 3rem;
+
+    .top-left {
+        align-items: end;
     }
-    .sub-title {
-        font-size: 12px;
-        margin-right: 3rem;
+
+    .top-right {
+        float: right;
     }
-    .items-div {
-        width:fit-content;
-    }
-    .method-info {
-        font-size: 15px;
-        padding: 5px;
-        margin: 0;
-    }
-    .div-textos {
-        margin: 0;
-        width: 300px;
-    }
-    .method-number {
-        margin-right: 1rem;
+
+    .corner1 {
+        margin-top: 0.9rem;
     }
 }
+    
 /* 375px */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .fakegrid .left-side,
     .fakegrid .right-side {
     padding-left: 0.5rem;
@@ -612,46 +580,106 @@ nav ul li:last-child {
     }
 
     .slide.first .title {
-        font-size: 25px;
-    }
-    .slide2 .title {
-        width: 400px;
-        margin: 0;
-        margin-top: 4rem;
-        font-size: 25px;
-        margin-right: 3rem;
-    }
-    #sub-title-background {
-        margin: 0;
-        width: fit-content;
-        padding: 5px;
+        font-size: 22px;
     }
     .slide2 {
-        gap: 0;
-        margin: 0;
+        width: fit-content;
+        max-width: 375px;
+        height: fit-content;
+        max-height: 3750px;
+        gap: 1rem;
     }
-    .items-div {
-        width: 300px;
+    
+    .title {
+        font-size: 24px;
     }
-    .method-title {
-        font-size: 12px;
-        margin-right: 3rem;
-    }
+
     .sub-title {
-        font-size: 12px;
-        margin-right: 3rem;
+        display: inline-block;
     }
+
+    #sub-title-background {
+        font-size: 14px;
+        width: fit-content;
+        max-width: 180px;
+        display: inline-block;
+    }
+
+    #second-title {
+        font-size: 12px;
+        max-width: 180px;
+        line-height: 20px;
+        display: inline-block;
+    }
+
+    .method-title {
+        font-size: 15px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .div-numeros {
+        padding-left: 7px;
+    }
+
+    .method-number {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+        width: 18px;
+    }
+
+    .div-textos {
+        width: fit-content;
+        max-width: 350px;
+        height: fit-content;
+        max-height: 400px;
+    }
+
     .method-info {
         font-size: 14px;
-        padding: 5px;
-        margin: 0;
     }
-    .method-number {
-        margin-right: 0.5rem;
+
+    .slide3 {
+        height: fit-content;
+        max-width: 425px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle-text {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    .detail-text {
+        font-size: 13px;
+        max-width: 120px;
+        text-align: center;
+        
+    }
+
+    .top-left {
+        align-items: end;
+    }
+
+    .top-right {
+        float: right;
+    }
+
+    .corner1 {
+        margin-top: 0.9rem;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .info .title {
         font-size: 25px;
     }
