@@ -402,6 +402,8 @@ nav ul li:last-child {
     .info .btn {
         margin-bottom: 40px;
     }
+
+
 }
 
 #sub-title-area {
@@ -445,7 +447,6 @@ nav ul li:last-child {
 
 
 .method-info {
-
     width: fit-content;
     max-width: 600px;
 }
