@@ -711,3 +711,142 @@ nav ul li:last-child {
 .mobile-menu {
     z-index: 1;
 }
+
+@media screen and (max-width: 769px) {
+    .info .title {
+        font-size: 35px;
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .slide2 {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .slide2 {
+        margin-top: 4rem;
+    }
+    .div-textos .method-info {
+        font-size: 15px;
+    }
+    .div-textos {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+
+    .slide.first .fakegrid {
+        width: 470px;
+    }
+
+    .div-textos {
+        width: 460px;
+    }
+}
+
+@media  screen and (max-width: 497px) {
+
+    #who .description {
+        font-size: 15px;
+    }
+    .slide.first .fakegrid {
+        width: 410px;
+    }
+    .slide.first .title {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .slide.first .fakegrid {
+        margin-top: 2rem;
+    }
+
+    .div-textos {
+        width: 410px;
+    }
+
+    .slide2 .title {
+        font-size: 25px;
+    }
+    .slide2 .sub-title{
+        font-size: 15px;
+    }
+    #sub-title-background {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .slide.first .fakegrid {
+        width: 370px;
+    }
+    .slide.first .title {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .slide.first .fakegrid {
+        margin-top: 2rem;
+    }
+
+    .slide.first .fakegrid .left-side,
+    .slide.first .fakegrid .right-side {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .slide.first .fakegrid img {
+        width: 60px;
+    }
+    .slide.first .fakegrid p {
+        font-size: 12px;
+    }
+
+    .div-textos {
+        width: 350px;
+        font-size: 10px;
+    }
+
+    .slide2 {
+        margin-top: 6rem;
+    }
+}
+
+@media  screen and (max-width: 390px) {
+        .slide.first .fakegrid {
+        width: 370px;
+    }
+    .slide.first .title {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .slide.first .fakegrid {
+        margin-top: 2rem;
+    }
+
+    .slide.first .fakegrid .left-side,
+    .slide.first .fakegrid .right-side {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .slide.first .fakegrid img {
+        width: 60px;
+    }
+    .slide.first .fakegrid p {
+        font-size: 12px;
+    }
+
+    .div-textos {
+        width: 350px;
+        font-size: 10px;
+    }
+
+    .slide2 {
+        margin-top: 6rem;
+    }
+    
+}
