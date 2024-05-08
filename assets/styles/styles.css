@@ -402,10 +402,78 @@ nav ul li:last-child {
     .info .btn {
         margin-bottom: 40px;
     }
+
+    #sub-title-background {
+        font-size: 18px;
+        width: fit-content;
+        max-width: 220px;
+        display: inline-block;
+    }
+
+    #second-title {
+        font-size: 16px;
+        max-width: 280px;
+        line-height: 20px;
+        display: inline-block;
+    }
+
+    .method-title {
+        font-size: 15px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .div-numeros {
+        padding-left: 7px;
+    }
+
+    .method-number {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+        width: fit-content;
+        max-width: 18px;
+    }
+
+    .div-textos {
+        width: fit-content;
+        max-width: 546px;
+        height: fit-content;
+        max-height: 400px;
+    }
+
+    .method-info {
+        font-size: 14px;
+
+    }
+
+    #circle {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #circle-text {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    .detail-text {
+        font-size: 16px;
+        max-width: 150px;
+        text-align: center;
+        
+    }
+
+    .corner1 {
+        margin-top: 0.9rem;
+    }
 }
 
 #sub-title-area {
     margin-bottom: 1rem;
+    display: inline-block;
 }
 
 #sub-title-background {
@@ -413,6 +481,11 @@ nav ul li:last-child {
     width: 260px;
     text-align: center;
     border-radius: 25px;
+    display: inline-block;
+}
+
+#second-title {
+    display: inline-block;
 }
 
 .slide2 {
@@ -437,6 +510,7 @@ nav ul li:last-child {
     border-radius: 50%;
     text-align: center;
     justify-content: center;
+    z-index: 0;
 }
 
 .items-div {
@@ -457,7 +531,7 @@ nav ul li:last-child {
 
 
 .div-numeros {
-    z-index: 1;
+    z-index: 0;
     position: absolute;
 }
 
@@ -503,6 +577,45 @@ nav ul li:last-child {
     float: right;
 }
 
+@media screen and (max-width: 586px) {
+    #sub-title-background {
+        font-size: 14px;
+        width: fit-content;
+        max-width: 165px;
+        display: inline-block;
+    }
+
+    #second-title {
+        font-size: 12px;
+        max-width: 180px;
+        line-height: 20px;
+        display: inline-block;
+    }
+
+    .div-textos {
+        width: fit-content;
+        max-width: 500px;
+        height: fit-content;
+        max-height: 400px;
+    }
+
+    .method-info {
+        font-size: 14px;
+    }
+
+    .detail-text {
+        font-size: 14px;
+        max-width: 120px;
+        text-align: center;
+        
+    }
+
+    .corner1 {
+        margin-top: 0.9rem;
+    }
+    
+}
+
 /* Responsividade 425px*/
 @media screen and (max-width: 426px) {
     .slide.first {
@@ -532,6 +645,24 @@ nav ul li:last-child {
         height: fit-content;
     }
 
+    .sub-title {
+        display: inline-block;
+    }
+
+    #sub-title-background {
+        font-size: 14px;
+        width: fit-content;
+        max-width: 180px;
+        display: inline-block;
+    }
+
+    #second-title {
+        font-size: 12px;
+        max-width: 180px;
+        line-height: 20px;
+        display: inline-block;
+    }
+
     .slide3 {
         height: fit-content;
         max-width: 425px;
@@ -552,8 +683,8 @@ nav ul li:last-child {
     }
 
     .detail-text {
-        font-size: 13px;
-        max-width: 120px;
+        font-size: 12px;
+        max-width: 100px;
         text-align: center;
         
     }
@@ -599,16 +730,16 @@ nav ul li:last-child {
     }
 
     #sub-title-background {
-        font-size: 14px;
+        font-size: 13px;
         width: fit-content;
-        max-width: 180px;
+        max-width: 140px;
         display: inline-block;
     }
 
     #second-title {
-        font-size: 12px;
-        max-width: 180px;
-        line-height: 20px;
+        font-size: 10px;
+        max-width: 160px;
+        line-height: 16px;
         display: inline-block;
     }
 
@@ -631,7 +762,7 @@ nav ul li:last-child {
 
     .div-textos {
         width: fit-content;
-        max-width: 350px;
+        max-width: 300px;
         height: fit-content;
         max-height: 400px;
     }
@@ -648,20 +779,26 @@ nav ul li:last-child {
     }
 
     #circle {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         margin-left: auto;
         margin-right: auto;
     }
 
     #circle-text {
-        font-size: 18px;
-        line-height: 70px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .detail-img {
+        border-radius: 50%;
+        width: 25px;
+        width: 25px;
     }
 
     .detail-text {
-        font-size: 13px;
-        max-width: 120px;
+        font-size: 10px;
+        max-width: 100px;
         text-align: center;
         
     }
@@ -705,4 +842,147 @@ nav ul li:last-child {
     .slide2 .title {
         margin-top: 4.5rem;
     }
+}
+
+.mobile-menu {
+    z-index: 1;
+}
+
+@media screen and (max-width: 769px) {
+    .info .title {
+        font-size: 35px;
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .slide2 {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .slide2 {
+        margin-top: 4rem;
+    }
+    .div-textos .method-info {
+        font-size: 15px;
+    }
+    .div-textos {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+
+    .slide.first .fakegrid {
+        width: 470px;
+    }
+
+    .div-textos {
+        width: 460px;
+    }
+}
+
+@media  screen and (max-width: 497px) {
+
+    #who .description {
+        font-size: 15px;
+    }
+    .slide.first .fakegrid {
+        width: 410px;
+    }
+    .slide.first .title {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .slide.first .fakegrid {
+        margin-top: 2rem;
+    }
+
+    .div-textos {
+        width: 410px;
+    }
+
+    .slide2 .title {
+        font-size: 25px;
+    }
+    .slide2 .sub-title{
+        font-size: 15px;
+    }
+    #sub-title-background {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .slide.first .fakegrid {
+        width: 370px;
+    }
+    .slide.first .title {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .slide.first .fakegrid {
+        margin-top: 2rem;
+    }
+
+    .slide.first .fakegrid .left-side,
+    .slide.first .fakegrid .right-side {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .slide.first .fakegrid img {
+        width: 60px;
+    }
+    .slide.first .fakegrid p {
+        font-size: 12px;
+    }
+
+    .div-textos {
+        width: 350px;
+        font-size: 10px;
+    }
+
+    .slide2 {
+        margin-top: 6rem;
+    }
+}
+
+@media  screen and (max-width: 390px) {
+        .slide.first .fakegrid {
+        width: 370px;
+    }
+    .slide.first .title {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .slide.first .fakegrid {
+        margin-top: 2rem;
+    }
+
+    .slide.first .fakegrid .left-side,
+    .slide.first .fakegrid .right-side {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .slide.first .fakegrid img {
+        width: 60px;
+    }
+    .slide.first .fakegrid p {
+        font-size: 12px;
+    }
+
+    .div-textos {
+        width: 350px;
+        font-size: 10px;
+    }
+
+    .slide2 {
+        margin-top: 6rem;
+    }
+    
 }
