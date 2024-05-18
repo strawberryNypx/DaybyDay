@@ -15,8 +15,20 @@
                 <ul class="menu">
                     <li><a href="#home">INÍCIO</a></li>
                     <li><a href="#classes">NOSSOS SERVIÇOS</a></li>
-                    <li><a href="#ebook">E-BOOK</a></li>
-                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#join-us">INSCREVA-SE</a></li>
+                    <li class="sobre dropdown" onmouseenter="dropdownAberto()">
+                            <details class="details">
+                                <summary>
+                                    SOBRE
+                                </summary>
+                                <p>
+                                    <a href="#about">BIO</a>
+                                    <a href="#feedback">FEEDBACK DOS ALUNOS</a>
+                                    <a href="#faq">FAQ</a>
+                                </p>   
+                            </details>
+                            </div>
+                            </li>
                 </ul>
             </div>
             <div class="mobile-menu-icon">
@@ -30,8 +42,10 @@
             <ul>
                 <li class="nav-item"><a href="#home" class="nav-link">INÍCIO</a></li>
                 <li class="nav-item"><a href="#classes" class="nav-link">NOSSOS SERVIÇOS</a></li>
-                <li class="nav-item"><a href="#ebook" class="nav-link">E-BOOK</a></li>
+                <li class="nav-item"><a href="#join-us" class="nav-link">INSCREVA-SE</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">SOBRE</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">FEEDBACK DOS ALUNOS</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
             </ul>
         </div>
     </header>
@@ -49,6 +63,26 @@
                     <img class="logo" src="https://dummyimage.com/179x432/#c6c6cc/fff" alt="">
                 </div>
             </section>
+            <section id="who" class="container-content">
+                <div class="info">
+                    <h1 class="title">QUEM SOMOS</h1>
+                    <p class="description">
+                        Com mais de 10 anos de experiência de mercado, a DAY BY
+                        DAY ENGLISH vem capacitando mais de 300 pessoas em busca
+                        da fluência.
+                    </p>
+                    <p class="description">
+                        Nosso método personalizado garante aulas dinâmicas e
+                        focadas nas metas individuais de nossos alunos.
+                    </p>
+                    <p class="description">
+                        Seja você um profissional aprimorando habilidades
+                        específicas, um estudante se preparando para exames
+                        internacionais, ou mesmo alguém que deseja simplesmente se
+                        comunicar com confiança, somos a escolha perfeita pra você.
+                    </p>
+                </div>
+            </section>
             <section id="classes" class="container-content">
                 <div class="slider">
                     <div class="slides">
@@ -57,16 +91,78 @@
                         <input type="radio" name="radio-btn" id="radio3">
         
                         <div class="slide first">
-                            <h1>Titulo</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis quam itaque, quibusdam quidem enim voluptatum tenetur molestiae consectetur aut voluptas, perspiciatis doloremque commodi earum, error ipsum? Laboriosam, aspernatur doloribus.</p>
+                            <h1 class="title">NOSSOS SERVIÇOS</h1>
+                            <div class="fakegrid">
+                                <div class="left-side">
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Diagnóstico do Aluno</p>
+        
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Aulas ao vivo</p>
+                                </div>
+                                <div class="right-side">
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Roteiro de Estudo Semanal</p>
+        
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Acompanhamento individualizado</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="slide">
-                            <h1>Titulo</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis quam itaque, quibusdam quidem enim voluptatum tenetur molestiae consectetur aut voluptas, perspiciatis doloremque commodi earum, error ipsum? Laboriosam, aspernatur doloribus.</p>
+                            <div class="slide2">
+                                <h1 class="title">NOSSO MÉTODO</h1>
+                                <div id="sub-title-area">
+                                    <h2  id="sub-title-background" class="sub-title">METODOLOGIA DBD</h1>
+                                    <h3 class="sub-title">Development Built on Diagnosis</h2>
+                                </div>
+                                <div>
+                                    <h3 class="method-title">DEVELOPMENT</h3>
+                                        <div class="items-div">
+                                            <h1 class="method-number" class="method-content">1</h1>
+                                            <p class="method-info fakegrid">Desenvolvimento das habilidades e conhecimento através de prática e experiência contínua.</p>
+                                        </div>
+                                </div>
+                                <div>
+                                    <h3 class="method-title">BUILD</h3>
+                                        <div class="items-div">
+                                            <h1 class="method-number" class="method-content">2</h1>
+                                            <p class="method-info fakegrid">Construção do conhecimento com base na aprendizagem de vocabulário essencial e estruturas gramáticas, promovendo a prática oral e escrita.</p>
+                                        </div>
+                                </div>
+                                <div>
+                                    <h3 class="method-title">DIAGNOSIS</h3>
+                                        <div class="items-div">
+                                            <h1 class="method-number" class="method-content">3</h1>
+                                            <p class="method-info fakegrid">Diagnosticar completamente a situação existente, criando estratégias mais eficazes e personalizadas para promover o crescimento e melhorias específicas.</p>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="slide">
-                            <h1>Titulo</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis quam itaque, quibusdam quidem enim voluptatum tenetur molestiae consectetur aut voluptas, perspiciatis doloremque commodi earum, error ipsum? Laboriosam, aspernatur doloribus.</p>
+                            <div id="esquerdo" class="areas-elementos">
+                                <div id="div1">
+                                    <p class="predecessor">Inglês para viajar</p>
+                                    <img id="imagem1" class="predecessor-img" src="/assets/img/close_white_36dp.svg">
+                                </div>
+                                <div class="areas-elementos">    
+                                    <p class="predecessor">Inglês para proficiência</p>
+                                    <img id="imagem2" class="predecessor-img" src="/assets/img/close_white_36dp.svg">    
+                                </div>
+                            </div>
+                            <div id="circulo"  class="areas-elementos">
+                                <h1>ÁREAS</h1>
+                            </div>
+                            <div id="direito" class="areas-elementos">
+                                <div id="div3">
+                                    <img class="predecessor-img"src="/assets/img/close_white_36dp.svg">
+                                    <p id="linha3" class="predecessor">Inglês para comunicação e compreensão</p>
+                                </div>
+                                <div class="areas-elementos">
+                                    <img class="predecessor-img" src="/assets/img/close_white_36dp.svg">
+                                    <p id="linha4" class="predecessor">Inglês para meio corporativo</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="navigation-auto">
                             <div class="auto-btn1"></div>
@@ -79,25 +175,6 @@
                         <label for="radio2" class="manual-btn"></label>
                         <label for="radio3" class="manual-btn"></label>
                     </div>
-                </div>
-            </section>
-            <section id="ebook" class="container-content">
-                <div class="picture">
-                    <img class="logo" src="https://dummyimage.com/179x432/#c6c6cc/fff" alt="">
-                </div>
-                <div class="info">
-                    <h1 class="title">E-BOOK</h1>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, deleniti? Sunt, ratione animi sequi rerum voluptatem eum laboriosam. Magnam consectetur mollitia quos modi, cum quae quo voluptatum earum exercitationem deleniti.</p>
-                    <button class="btn-download">Download</button>
-                </div>
-            </section>
-            <section id="about" class="container-content">
-                <div class="picture">
-                    <img class="logo" src="https://dummyimage.com/179x432/#c6c6cc/fff" alt="">
-                </div>
-                <div class="info">
-                    <h1 class="title">SOBRE</h1>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, deleniti? Sunt, ratione animi sequi rerum voluptatem eum laboriosam. Magnam consectetur mollitia quos modi, cum quae quo voluptatum earum exercitationem deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquid laudantium commodi doloribus blanditiis, porro dignissimos doloremque quam maiores mollitia culpa reiciendis perferendis sit, ratione amet quibusdam cupiditate tempore molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellendus saepe nostrum ipsum fugit. Mollitia, modi. Omnis, cumque labore, veniam deleniti nihil maxime amet quos pariatur atque cum, eaque vitae?</p>
                 </div>
             </section>
             <section id="join-us" class="container-content">
@@ -387,8 +464,75 @@
                     </div>
                 </div>
             </section>
+            <section id="about" class="container-content">
+                        <div class="picture">
+                            <img class="canguru" src="assets/img/canguru.JPG" alt="Amanda e um canguru">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">SOBRE</h1>
+                            <div class="description">
+                                <p>
+                                    <span>Meu nome é Amanda. Nasci em João Pessoa na Paraíba e sempre fui apaixonada por Inglês</span>
+                                </p>
+                                <p><span>Como uma boa Libriana indecisa, </span>
+                                    optei por seguir os passos do meu pai na Engenharia Civil, onde sou formada pela UFPB, mas lá dentro eu sempre soube que o Inglês era a minha
+                                    <span>paixão.</span>
+                                <p><span>Morei 1 ano na Austrália</span> 
+                                    durante a minha graduação. Lá tive a certeza que era com isso que eu queria trabalhar e retornei ao Brasil para iniciar a minha carreira como Professora de Inglês.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="feedback" class="container-content">
+                <h3>feedback</h3>
+            </section>
+            <section id="faq"class="container-content">
+                <div class="faq-container">
+                    <h1 class="title">Perguntas Frequentes (FAQ)</h3>
+                <div class="faq-box" >
+                    <ul>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        
+                </ul>
+                    
+                </div>
+            </div>
+            </section>
+
         </div>
     </main>
-    <script src="./assets/scripts/script.js"></script>
+    <footer>
+        <p>all rights reserved yada yada</p>
+    </footer>
+        <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
+
