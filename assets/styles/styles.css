@@ -581,12 +581,7 @@ nav ul li:last-child a {
     text-align: center;
 }
 
-#faq h2,
-#faq p {
-    font-family: 'Karma', sans-serif;
-}
-
-#faq .faq-container {
+.faq-container {
     display: block;
     width: 70%;
 }
