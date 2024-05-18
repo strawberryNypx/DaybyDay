@@ -147,4 +147,4 @@ Na sua IDE, alguns arquivos vão estar com uma !, esses são os arquivos que tem
 Na dúvida, PESQUISE E PERGUNTE
 
 **5.Faça o commit das suas mudanças na sua branch e crie um pull request**
-Evite aceitar o seu próprio pull request, a recomendação é pedir para alguém revisar
+Evite aceitar o seu próprio pull request, a recomendação é pedir para alguém revisar.
