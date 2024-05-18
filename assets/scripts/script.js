@@ -29,15 +29,6 @@ function carousel() {
 carousel();
 
 //dropdonw do Sobre no menu
-function menuDropdown() {
-  const dropContent = document.querySelector(".drop-content");
-  if (dropContent.classList.contains("open")) {
-    dropContent.classList.remove("open");
-    document.querySelector(".drop-icon").src = "assets/img/down-arrow.png";
-  } else {
-    dropContent.classList.add("open");
-    document.querySelector(".drop-icon").src = "assets/img/up-arrow.png";
-  }
+function dropdownAberto() {
+  document.querySelector(".details").open = true;
 }
-
-//dropdown das perguntas

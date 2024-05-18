@@ -74,34 +74,41 @@ nav ul li:last-child a {
 }
 
 /*Menu dropdown*/
-.drop-label {
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown summary {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 
-.dropdown-btn,
-.dropdown-btn img {
-    border: none;
-    background-color: transparent;
-    width: 15px;
-    height: 15px;
-}
-
-.dropdown .drop-content {
-    padding-top: 10px;
+.dropdown details p {
+    padding: 1rem;
+    display: inline;
     position: absolute;
-    opacity: 0;
 }
 
-.dropdown:hover .drop-content,
-.dropdown .drop-content.open {
-    transition: all 300ms ease-in-out;
-    display: flex;
-    gap: 15px;
-    opacity: 1;
+.dropdown details p a {
+    padding: 0 5px;
 }
 
+.dropdown summary::after {
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url('../img/arrow-black.svg');
+    background-size: cover;
+    margin-left: .75em;
+    transition: 0.2s;
+    transition: all 400ms ease-in-out;
+
+}
+
+.dropdown details[open]>summary::after {
+    transform: rotate(180deg);
+}
 
 /* Mobile-Menu */
 .nav-link {
@@ -215,8 +222,11 @@ nav ul li:last-child a {
 }
 
 .container-content .picture {
+    max-width: 50%;
+}
+
+.picture img {
     max-width: 100%;
-    align-items: center;
 }
 
 .title {
@@ -552,39 +562,8 @@ nav ul li:last-child a {
 }
 
 /*SOBRE*/
-#about .picture .canguru {
-    max-width: 100%;
-    position: relative;
-}
-
 #about .picture {
-    padding: 1rem;
-    border: 5px dashed var(--vermelho);
-}
-
-#about {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5%;
-    gap: 3rem;
-}
-
-#about p,
-#about span,
-#about h2,
-#about h3 {
-    color: var(--azul);
-    font-family: 'Karma', sans-serif;
-    font-weight: 700;
-}
-
-.description-1 div {
-    background-color: var(--amarelo);
-    padding: 20px;
-}
-
-#about h2 {
-    font-size: xx-large;
+    max-width: 40%;
 }
 
 #about p {
@@ -593,43 +572,64 @@ nav ul li:last-child a {
 }
 
 #about span {
-    font-size: x-large;
-}
-
-.curiosidades {
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.37);
-    /*coloquei uma transparência no background para quando adicionar os ícones*/
-
-
-}
-
-.curiosidades div {
-    border: 2px solid var(--vermelho);
-    padding: 1.5rem 1rem 1.5rem 3rem;
-    margin: 1rem;
-
-}
-
-.curiosidades h2 {
-    position: absolute;
-    background-color: white;
-    left: 10%;
-    padding: 0 1rem;
-}
-
-.curiosidades p::before {
-    position: absolute;
-    left: 2rem;
-    content: "x";
-    color: white;
-    background-color: var(--vermelho);
-    width: 1.5rem;
-    height: 1.5rem;
-    text-align: center;
+    font-weight: 700;
 }
 
 /*FAQ*/
+#faq h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#faq h2,
+#faq p {
+    font-family: 'Karma', sans-serif;
+}
+
+#faq .faq-container {
+    display: block;
+    width: 70%;
+}
+
 .faq-box {
-    width: 70%
+    padding: 2rem;
+    margin: 1rem;
+    background-color: hsla(0, 0%, 100%, 0.80);
+}
+
+.pergunta summary {
+    list-style: none;
+    color: var(--azul);
+    font-size: x-large;
+    font-weight: 700;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.resposta {
+    font-size: large;
+    padding: 0 2rem;
+}
+
+.faq-box summary::after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background: url('../img/arrow.svg');
+    background-size: cover;
+    margin-left: .75em;
+    transition: 0.2s;
+    transition: all 400ms ease-in-out;
+
+}
+
+.faq-box details[open] {
+    display: block;
+}
+
+.faq-box details[open]>summary::after {
+    transform: rotate(180deg);
+
 }

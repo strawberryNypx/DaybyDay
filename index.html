@@ -16,19 +16,21 @@
                     <li><a href="#home">INÍCIO</a></li>
                     <li><a href="#classes">NOSSOS SERVIÇOS</a></li>
                     <li><a href="#ebook">E-BOOK</a></li>
-                    <li class="sobre dropdown">
-                        <div class="drop-label">
-                            <span>SOBRE</span> 
-                            <button onclick="menuDropdown()" class="dropdown-btn">
-                                <img src="assets/img/down-arrow.png"  class="drop-icon" alt="dropdown arrow">
-                            </button>
-                        </div>
-                        <ul class="drop-content">
-                            <li><a href="#about">BIO</a></li>
-                            <li><a href="#feedback">FEEDBACK DOS ALUNOS</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                        </ul>
-                </li>
+                    <li class="sobre dropdown" onmouseenter="dropdownAberto()">
+                            <details class="details">
+                                <summary>
+                                    SOBRE
+                                </summary>
+                                <p>
+                                    <a href="#about">BIO</a>
+                                    <a href="#feedback">FEEDBACK DOS ALUNOS</a>
+                                    <a href="#faq">FAQ</a>
+                                </p>
+                            
+                                
+                            </details>
+                            </div>
+                            </li>
                 </ul>
             </div>
             <div class="mobile-menu-icon">
@@ -188,51 +190,73 @@
                 </div>
             </section>
             <section id="about" class="container-content">
-                <div class="description-1">
-                    <h1 class="title">SOBRE</h1>
-                    <div>
-                        <h2>Meu nome é Amanda. Nasci em João Pessoa na Paraíba e sempre fui apaixonada por Inglês</h2>
-                        <p><span>Como uma boa Libriana indecisa, </span>optei por seguir os passos do meu pai na Engenharia Civil, onde sou formada pela UFPB, mas lá dentro eu sempre soube que o Inglês era a minha <span class="paixao">paixão.</span></h3>
-                        <p><span>Morei 1 ano na Austrália</span> durante a minha graduação. Lá tive a certeza que era com isso que eu queria trabalhar e retornei ao Brasil para iniciar a minha carreira como Professora de Inglês.</p>
-                    </div>
-
-                </div>
-                <div class="picture">
-                    <img class="canguru" src="assets/img/canguru.JPG" alt="">
-                </div>
-                <div class="curiosidades">
-                    <h2>Curiosidades sobre mim</h2>
-                    <div>                    
-                        <p>Adoro ver programas de entrevistas, séries, filmes e desenhos animados;</p>
-                        <p>Minha comida favorita é Sopa;</p>
-                        <p>Sou fascinada pela cultura e culinária Oriental, principalmente a Japonesa;</p>
-                        <p>Não recuso um docinho depois do almoço;</p>
-                        <p>Amo animais e tenho um cachorrinho chamado Costelinha;</p>
-                        <p>Não suporto frio, como boa paraibana;</p>
-                        <p>Amo viajar para ligares exóticos e com muita natureza.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="feedback" class="container-content">
+                        <div class="picture">
+                            <img class="canguru" src="assets/img/canguru.JPG" alt="Amanda e um canguru">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">SOBRE</h1>
+                            <div class="description">
+                                <p>
+                                    <span>Meu nome é Amanda. Nasci em João Pessoa na Paraíba e sempre fui apaixonada por Inglês</span>
+                                </p>
+                                <p><span>Como uma boa Libriana indecisa, </span>
+                                    optei por seguir os passos do meu pai na Engenharia Civil, onde sou formada pela UFPB, mas lá dentro eu sempre soube que o Inglês era a minha
+                                    <span>paixão.</span>
+                                <p><span>Morei 1 ano na Austrália</span> 
+                                    durante a minha graduação. Lá tive a certeza que era com isso que eu queria trabalhar e retornei ao Brasil para iniciar a minha carreira como Professora de Inglês.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="feedback" class="container-content">
                 <h3>feedback</h3>
             </section>
             <section id="faq"class="container-content">
-                <h3>FAQ</h3>
+                <div class="faq-container">
+                    <h1 class="title">Perguntas Frequentes (FAQ)</h3>
                 <div class="faq-box" >
                     <ul>
                         <li class="pergunta">
                             <details>
-                                <summary><h3>Pergunta?</h3></summary>
-                                <p class="resposta">resposta</p>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
                                 </details>
                         </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Pergunta?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        
                 </ul>
                     
                 </div>
+            </div>
             </section>
 
         </div>
     </main>
-    <script src="./assets/scripts/script.js"></script>
+    <footer>
+        <p>all rights reserved yada yada</p>
+    </footer>
+        <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
