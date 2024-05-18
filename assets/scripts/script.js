@@ -1,12 +1,15 @@
 
 function menuShow() {
+    let steps = document.querySelector('.steps');
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
         document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
+        steps.style.display = 'flex';
     } else {
         menuMobile.classList.add('open');
         document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
+        steps.style.display = 'none';
     }
 }
 
@@ -95,7 +98,7 @@ function updateProgress() {
     progress.style.width = (progressActive.length - 1) / (formSteps.length - 1) * 100 + '%';
 }
 
-function mostrarNivelIngles() {
+function dropMoreOptions() {
     let nivelIngles = document.getElementById("nivel-ingles");
     let radiosNivel = document.getElementsByName("nivel do ingles");
     let jaEstudou = document.getElementById("ja-estudou");
@@ -111,7 +114,7 @@ function mostrarNivelIngles() {
 var inputTel = document.getElementById('telefone');
 
 inputTel.addEventListener('input', function() {
-    let telFormatado = this.value.replace(/\D/g, '');
-    telFormatado = telFormatado.replace(/(\d{2})(\d{1})(\d{1,4})(\d{1,4})/, '($1) $2 $3-$4');
-    this.value = telFormatado;
+    let formattedTel = this.value.replace(/\D/g, '');
+    formattedTel = formattedTel.replace(/(\d{2})(\d{1})(\d{1,4})(\d{1,4})/, '($1) $2 $3-$4');
+    this.value = formattedTel;
 });
