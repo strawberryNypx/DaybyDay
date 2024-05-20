@@ -552,6 +552,10 @@ nav ul li:last-child a {
     display: inline-block;
 }
 
+.sub-title {
+    display: inline-block;
+}
+
 .slide2 {
     width: 610px;
     gap: 1rem;
