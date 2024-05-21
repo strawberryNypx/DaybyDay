@@ -6,8 +6,10 @@
     --azul: #0071ED;
     --vermelho: #F64141;
     --vermelho-transp: #f64141b7;
-    --amarelo: #FFD600;
-    --backgroud: rgb(246, 246, 234);
+    --amarelo: #FBDF10;
+    --backgroud: #f0f0f0;
+    --background-menu: #f0f0f0;
+    --preto: #2c2c2c;
 }
 
 * {
@@ -47,7 +49,7 @@ body {
     height: 100vh;
 }
 
-section {
+.section-scroll {
     scroll-snap-align: start;
     height: 100vh;
     transition: scroll-snap-align 2s ease;
@@ -59,11 +61,13 @@ section {
     display: flex;
     align-items: center;
     position: fixed;
-    margin: 20px 70px 20px 40px;
+    margin: 0 70px 20px 40px;
+    padding-top: 20px;
     z-index: 1;
     /*para o menu dropdown do sobre não ficar escondido*/
     width: 100%;
     overflow: visible;
+    background-color: var(--background-menu);
 }
 
 nav {
@@ -84,7 +88,7 @@ nav ul {
 nav ul li a {
     margin-right: 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--preto)
 }
 
 nav ul li:last-child a {
@@ -103,6 +107,7 @@ nav ul li:last-child a {
 }
 
 .dropdown details p {
+    background-color: var(--background-menu);
     padding: 1rem;
     display: inline;
     position: absolute;
@@ -132,7 +137,7 @@ nav ul li:last-child a {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #000;
+    color: var(--preto);
     font-weight: 400;
 }
 
@@ -269,7 +274,7 @@ nav ul li:last-child a {
 .info a {
     text-decoration: none;
     margin-left: 10px;
-    color: #000;
+    color: var(--preto);
 }
 
 /* css do carrosel */
@@ -335,7 +340,7 @@ nav ul li:last-child a {
 
 .manual-btn:hover,
 .navigation-auto div:hover {
-    background: #000;
+    background: var(--preto);
 }
 
 #radio1:checked~.first {
@@ -352,19 +357,19 @@ nav ul li:last-child a {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background: #000;
+    background: var(--preto);
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background: #000;
+    background: var(--preto);
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background: #000;
+    background: var(--preto);
 }
 
 /* Botões */
-.info .btn {
+.btn {
     width: 159px;
     height: 49px;
     border-radius: 32px;
@@ -885,6 +890,13 @@ nav ul li:last-child a {
 }
 
 /*SOBRE*/
+#about {
+    background-image: url(../img/SOBRE-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 #about .picture {
     max-width: 40%;
 }
@@ -899,55 +911,63 @@ nav ul li:last-child a {
 }
 
 /*FAQ*/
+#faq {
+    height: auto;
+    margin-top: auto;
+}
+
 #faq h1 {
     width: 100%;
     text-align: center;
 }
 
-.faq-container {
-    display: block;
-    width: 70%;
-}
-
 .faq-box {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 2rem;
+    width: 65%;
+    padding: 5.5rem 0;
     margin: 1rem;
     background-color: var(--backgroud);
 }
 
 .pergunta summary {
-    list-style: none;
-    color: var(--azul);
-    font-size: x-large;
+    cursor: pointer;
+    color: var(--preto);
+    font-size: 20px;
     font-weight: 700;
     padding: 1rem;
-    display: flex;
-    align-items: center;
-    position: relative;
+}
+
+.pergunta {
+    border-top: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+.pergunta:first-of-type {
+    border: none;
+}
+
+.pergunta summary::marker {
+    content: '+  ';
+    color: var(--azul);
+}
+
+
+.faq-box details[open]>summary::marker {
+    content: '-   ';
+    color: var(--vermelho);
 }
 
 .resposta {
+    color: gray;
     font-size: large;
-    padding: 0 2rem;
+    margin: 0 3rem 2rem 3rem;
+    padding: 0 1rem;
+    border-left: 3px solid var(--vermelho);
 }
 
-.faq-box summary::after {
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    background: url('../img/arrow.svg');
-    background-size: cover;
-    margin-left: .75em;
-    transition: 0.2s;
-    transition: all 400ms ease-in-out;
-
-}
-
-.faq-box details[open] {
-    display: block;
-}
-
-.faq-box details[open]>summary::after {
-    transform: rotate(180deg);
-
+.more {
+    display: flex;
+    flex-direction: row;
 }
