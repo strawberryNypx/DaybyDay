@@ -172,3 +172,34 @@ function openFAQElement(target) {
     }
   });
 }
+
+// Tratamento de dados recebidos pelo Form
+
+const formSubmit = (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = {};
+
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+
+  fetch("https://api.sheetmonkey.io/form/hGjrD1zacWrPAAu4LMLgei", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log("Sucess", result);
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
+};
+
+document.querySelector(".slide-form").addEventListener("submit", formSubmit);
