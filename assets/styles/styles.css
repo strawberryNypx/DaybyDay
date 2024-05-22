@@ -7,7 +7,7 @@
     --vermelho: #F64141;
     --vermelho-transp: #f64141b7;
     --amarelo: #FFD600;
-    --backgroud: rgb(246, 246, 234);
+    --backgroud: #F0F0F0;
 }
 
 * {
@@ -76,6 +76,8 @@ nav {
 
 nav .logo {
     margin-right: 70px;
+    width:80px;
+    height: 80px;
 }
 
 nav ul {
@@ -149,18 +151,61 @@ nav ul li:last-child a {
 /* Conteúdo do site */
 .container-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+}
+#home .info{
+    margin-left: 10vw;
+}
+@media screen and (max-width:986px){
+    #home.infor{
+        margin-left: 0;
+    }
 }
 
-.container-content .picture {
-    max-width: 50%;
+
+/* Componentes pagina Home */
+.picture .img-main {
+    width: 50vw; 
+    height: auto; 
+    position: absolute; 
+    bottom: 0px;
+    right: 2vw; 
+}
+.picture .img-vector {
+    width: 45vw;
+    position: absolute;
+    right: -1vw;
+    bottom: 0px;
+    z-index: -1;
+}
+.picture .img-bubble {
+    width: 12vw; 
+    height: auto; 
+    position: absolute; 
+    bottom: 2vw;
+    right: -2vw; 
+}
+.picture .img-bar {
+    width: 12vw; 
+    height: auto; 
+    position: absolute; 
+    bottom: -2vw;
+    left: 2vw; 
+}
+.picture .img-bar-alt {
+    width: 14vw; 
+    height: auto; 
+    position: absolute; 
+    top: 0;
+    right: -9vw; 
+}
+#who.container-content {
+    justify-content: center; 
 }
 
-.picture img {
-    max-width: 100%;
-}
 
 .title {
     font-family: 'Julius Sans One', sans-serif;
@@ -211,7 +256,7 @@ nav ul li:last-child a {
 
 }
 
-/* Utilezem a class slide para customizar as tags h1, p ou img. Exemplo: .slide h1 | .slide p | .slide img */
+/* Utilezem a class slide para customizar as tags h1, p . Exemplo: .slide h1 | .slide p | */
 .slide {
     width: 20%;
     padding: 20px;
@@ -229,7 +274,7 @@ nav ul li:last-child a {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 100px;
+    bottom: 80px;
 }
 
 .manual-btn,
@@ -529,7 +574,7 @@ nav ul li:last-child a {
     resize: none;
     margin: 0.4rem 0.2rem 0;
     width: 90%;
-    height: 4rem;
+    height: 5rem;
     background-color: rgb(250, 250, 247);
 }
 
@@ -843,7 +888,7 @@ nav ul li:last-child a {
 
 
 /* Telas menores */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
     .container-header {
         width: 100%;
     }
@@ -863,9 +908,9 @@ nav ul li:last-child a {
 
     }
 
-    .container-content .picture {
+    /* .picture .img-main , .picture .img-vector{
         display: none;
-    }
+    } */
 
     .info .title {
         max-width: 80vw;
@@ -946,7 +991,7 @@ nav ul li:last-child a {
     }
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 900px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
