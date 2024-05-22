@@ -832,21 +832,39 @@ nav ul li:last-child a {
 
 /*SOBRE*/
 #about {
-    justify-content: space-evenly;
+    position: relative;
 }
 
+#about .sobre-background {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+.sobre-background .bg-mobile {
+    display: none;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 #about .picture {
     max-width: 40%;
 }
 
-#about img {
+#about .picture img {
     max-width: 100%;
 }
 
 #about p {
     padding-top: 15px;
-    font-size: large;
+    font-size: x-large;
 }
 
 #about span {
@@ -1020,6 +1038,50 @@ nav ul li:last-child a {
     .corner1 {
         margin-top: 0.9rem;
     }
+
+    /*SOBRE*/
+    #about .about-content {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        z-index: 1;
+        height: 90%;
+    }
+
+    #about .info h1 {
+        margin: 0;
+    }
+
+    #about .picture {
+        max-width: fit-content;
+    }
+
+    #about p {
+        font-size: medium;
+        background: #f0f0f0;
+        background: linear-gradient(180deg, #f0f0f0ce 90%, #f0f0f000 100%);
+    }
+
+    #about .bg-desktop {
+        display: none;
+    }
+
+    #about .bg-mobile {
+        width: 100%;
+        display: flex;
+        z-index: 0;
+    }
+
+    /*FAQ*/
+    .resposta {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .pergunta summary {
+        padding: 1rem 0
+    }
+
 }
 
 @media screen and (max-width: 900px) {
