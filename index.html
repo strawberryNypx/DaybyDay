@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+
+    <header class="container-header">
+        <nav>
+            <img class="logo" src="assets/img/DAYBYDAY ICON.png" alt="">
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li><a href="#home">INÍCIO</a></li>
+                    <li><a href="#classes">NOSSOS SERVIÇOS</a></li>
+                    <li><a href="#join-us">INSCREVA-SE</a></li>
+                    <li class="sobre dropdown" onmouseenter="dropdownAberto()">
+                            <details class="details">
+                                <summary>
+                                    SOBRE
+                                </summary>
+                                <p>
+                                    <a href="#about">BIO</a>
+                                    <a href="#feedback">FEEDBACK DOS ALUNOS</a>
+                                    <a href="#faq">FAQ</a>
+                                </p>   
+                            </details>
+                            </div>
+                            </li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <div class="close-icon-container">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/close_white_36dp.svg" alt="Close Icon"></button>
+            </div>
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link">INÍCIO</a></li>
+                <li class="nav-item"><a href="#classes" class="nav-link">NOSSOS SERVIÇOS</a></li>
+                <li class="nav-item"><a href="#join-us" class="nav-link">INSCREVA-SE</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">SOBRE</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">FEEDBACK DOS ALUNOS</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+
+        <div class="container">
+            <section id="home" class="container-content">
+                <div class="info">
+                    <h1 class="title">DAY BY DAY ENGLISH</h1>
+                    <p class="description">Inglês individualizado, no seu tempo, do seu jeito!</p>
+                    <button class="btn"></button>
+                </div>
+                <div class="picture">
+                    <img class="img-main" src="assets/img/principal_pic.png" alt="">
+                    <img class="img-vector" src="assets/img/vetor.png" alt="">
+                    <img class="img-bubble" src="assets/img/bolinhas.png" alt="">
+                    <img class="img-bar" src="assets/img/barras2.png" alt="">
+                    <img class="img-bar-alt"  src="assets/img/barras.png" alt="">
+                </div>
+            </section>
+            <section id="who" class="container-content">
+                <div class="info">
+                    <h1 class="title">QUEM SOMOS</h1>
+                    <p class="description">
+                        Com mais de 10 anos de experiência de mercado, a DAY BY
+                        DAY ENGLISH vem capacitando mais de 300 pessoas em busca
+                        da fluência.
+                    </p>
+                    <p class="description">
+                        Nosso método personalizado garante aulas dinâmicas e
+                        focadas nas metas individuais de nossos alunos.
+                    </p>
+                    <p class="description">
+                        Seja você um profissional aprimorando habilidades
+                        específicas, um estudante se preparando para exames
+                        internacionais, ou mesmo alguém que deseja simplesmente se
+                        comunicar com confiança, somos a escolha perfeita pra você.
+                    </p>
+                </div>
+            </section>
+            <section id="classes" class="container-content">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+        
+                        <div class="slide first">
+                            <h1 class="title">NOSSOS SERVIÇOS</h1>
+                            <div class="fakegrid">
+                                <div class="left-side">
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Diagnóstico do Aluno</p>
+        
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Aulas ao vivo</p>
+                                </div>
+                                <div class="right-side">
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Roteiro de Estudo Semanal</p>
+        
+                                    <img src="/assets/img/close_white_36dp.svg">
+                                    <p>Acompanhamento individualizado</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide2">
+                                <h1 class="title">NOSSO MÉTODO</h1>
+                                <div id="sub-title-area">
+                                    <h2  id="sub-title-background" class="sub-title">METODOLOGIA DBD</h1>
+
+                                    <h3 class="sub-title">Development Built on Diagnosis</h2>
+                                </div>
+                                <div>
+                                    <h3 class="method-title">DEVELOPMENT</h3>
+                                        <div class="items-div">
+                                            <div class="div-numeros">
+                                                <h1 class="method-number" class="method-content">1</h1>
+                                            </div>
+                                            <div class="div-textos">
+                                                <p class="method-info fakegrid">Desenvolvimento das habilidades e conhecimento através de prática e experiência contínua.</p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div>
+                                    <h3 class="method-title">BUILD</h3>
+                                        <div class="items-div">
+                                            <div class="div-numeros">
+                                                <h1 class="method-number" class="method-content">2</h1>
+                                            </div>
+                                            <div class="div-textos">
+                                                <p class="method-info fakegrid">Construção do conhecimento com base na aprendizagem de vocabulário essencial e estruturas gramáticas, promovendo a prática oral e escrita.</p>
+                                            </div>
+
+                                        </div>
+                                </div>
+                                <div>
+                                    <h3 class="method-title">DIAGNOSIS</h3>
+                                        <div class="items-div">
+                                            <div class="div-numeros">
+                                                <h1 class="method-number" class="method-content">3</h1>
+                                            </div>
+                                            <div class="div-textos">
+                                                <p class="method-info fakegrid">Diagnosticar completamente a situação existente, criando estratégias mais eficazes e personalizadas para promover o crescimento e melhorias específicas.</p>
+                                            </div>
+
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide3">
+                                <div id="top">
+                                    <div class="top-left detail corner1">
+                                        <p  class="detail detail-text">Inglês para viajar</p>
+                                        <img class="detail detail-img" src="/assets/img/close_white_36dp.svg">
+                                    </div>
+                                    <div class="top-right detail">    
+                                        <img  class="detail detail-img" src="/assets/img/close_white_36dp.svg">
+                                        <p  class="detail detail-text">Inglês para comunicação e compreensão</p>
+                                    </div>
+                                </div>
+                                <div id="circle">
+                                    <h1 id="circle-text">ÁREAS</h1>
+                                </div>
+                                <div class="bottom">
+                                    <div class="top-left detail">
+                                        <p class="detail detail-text">Inglês para proficiência</p>
+                                        <img class="detail detail-img" src="/assets/img/close_white_36dp.svg">
+                                    </div>
+                                    <div class="top-right detail">
+                                        <img class="detail detail-img" src="/assets/img/close_white_36dp.svg">
+                                        <p class="detail detail-text">Inglês para meio corporativo</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                </div>
+            </section>
+            <section id="join-us" class="container-content">
+                <div class="form-container">
+                    <div class="form-img">
+                        <img src="assets/img/DBD_PADRONAGEM.svg" alt="">
+                    </div>
+                    <div class="form-box">
+                        <form action="" id="join-form" method="post">
+                            <div class="form-header">
+                                <div class="form-title">
+                                    <h2>Inscreva-se</h2>
+                                </div>
+                                <div class="steps">
+                                    <div id="progress"></div>
+                                    <div class="step-form active"></div>
+                                    <div class="step-form"></div>
+                                    <div class="step-form"></div>
+                                    <div class="step-form"></div>
+                                    <div class="step-form"></div>
+                                </div>
+                            </div>
+        
+                            <div class="slide-form" id="slide-form-1">
+                                <div class="input-group">
+                                    <div class="input-box">
+                                        <label for="nome">Qual é o seu nome?</label>
+                                        <input type="text" name="nome" placeholder="Digite seu nome" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="idade">Quantos anos você tem?</label>
+                                        <input type="text" name="idade" placeholder="Digite sua idade (opcional)">
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="telefone">Qual é o seu telefone?</label>
+                                        <input type="tel" name="telefone" id="telefone" placeholder="(99) 9 9999-9999" maxlength="16" title="Digite o código de área seguido do número do seu telefone" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="email">Qual é o seu e-mail?</label>
+                                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                                    </div>
+                                </div>
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>De onde você me conhece?</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="radio" name="por onde conheceu" id="google" value="google">
+                                            <label for="google">Google</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="por onde conheceu" id="recomendacao" value="recomendação de pessoas">
+                                            <label for="recomendacao">Recomendação de pessoas</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="por onde conheceu" id="instagram" value="instagram">
+                                            <label for="instagram">Instagram</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="por onde conheceu" id="whatsapp" value="whatsapp">
+                                            <label for="whatsapp">Whatsapp</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="slide-form" id="slide-form-2">
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>Quais são os seus objetivos com o inglês?</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="checkbox" name="objetivo" id="proficiencia" value="proficiência">
+                                            <label for="proficiencia">Teste de proficiência</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" name="objetivo" id="corporativo" value="inglês corporativo">
+                                            <label for="corporativo">Melhorar o inglês corporativo</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" name="objetivo" id="escrita" value="habilidade escrita">
+                                            <label for="proficiencia">Melhorar a habilidade de escrita</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" name="objetivo" id="oral" value="habilidade oral">
+                                            <label for="oral">Melhorar a habilidade oral</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" name="objetivo" id="textual" value="compreensão textual">
+                                            <label for="textual">Melhorar a compreensão textual</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" name="objetivo" id="auditiva" value="compreensão auditiva">
+                                            <label for="auditiva">Melhorar a compreensão auditiva</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>Você já fez algum curso de inglês anteriormente?</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="radio" name="estudou inglês antes" id="ja-estudou" value="sim" onchange="dropMoreOptions()">
+                                            <label for="ja-estudou">Sim, já estudei inglês</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="estudou inglês antes" id="nao-estudou" value="não" onchange="dropMoreOptions()">
+                                            <label for="nao-estudou">Não, nunca fiz um curso de inglês</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="nivel-ingles" class="options-group">
+                                    <div class="options-title">
+                                        <h3>Você sabe o seu nível? Caso não saiba, sugerimos <a href="https://learnenglish.britishcouncil.org/online-english-level-test">esse teste de nivelamento</a> online oferecido pelo site British Council!</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="radio" name="nivel do ingles" id="a1" value="a1">
+                                            <label for="a1">A1 (elementary)</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="nivel do ingles" id="a2" value="a2">
+                                            <label for="a2">A2 (pre-intermediate)</label>
+                                        </div>
+                                            <div class="options-input">
+                                            <input type="radio" name="nivel do ingles" id="b1" value="b1">
+                                            <label for="b1">B1 (intermediate)</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="nivel do ingles" id="b2" value="b2">
+                                            <label for="b2">B2 (upper-intermediate)</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" name="nivel do ingles" id="c1" value="c1">
+                                            <label for="c1">C1 (advanced)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="slide-form" id="slide-form-3">
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>Quantas horas de aula por semana você tem interesse?</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="radio" id="1h" name="interesse em ?h por semana" value="1h">
+                                            <label for="1h">1h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" id="1h30" name="interesse em ?h por semana" value="1h30">
+                                            <label for="1h30">1h30 (1x/semana)</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" id="2h1x" name="interesse em ?h por semana" value="2h uma vez por semana">
+                                            <label for="2h1x">2h (no mesmo dia - 1x/semana)</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" id="2h2x" name="interesse em ?h por semana" value="2h duas vezes por semana">
+                                            <label for="2h2x">2h (2 aulas de 1h/semana)</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" id="2hmais" name="interesse em ?h por semana" value="mais que 2h">
+                                            <label for="2hmais">Mais que 2h</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>Em quais dias da semana você pode ter aula?</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="checkbox" id="segunda" name="dias possíveis para as aulas" value="segunda">
+                                            <label for="segunda">Segunda-feira</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="terca" name="dias possíveis para as aulas" value="terca">
+                                            <label for="terca">Terça-feira</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="quarta" name="dias possíveis para as aulas" value="quarta">
+                                            <label for="terca">Quarta-feira</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="quinta" name="dias possíveis para as aulas" value="quinta">
+                                            <label for="quinta">Quinta-feira</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="sexta" name="dias possíveis para as aulas" value="sexta">
+                                            <label for="sexta">Sexta-feira</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="slide-form" id="slide-form-4">
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>Você pode ter aula nos turnos: (Escolha todos que puder)</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno1" name="turnos[]" value="8h-9h">
+                                            <label for="turno1">8h-9h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno2" name="turnos[]" value="9h-10h">
+                                            <label for="turno2">9h-10h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno3" name="turnos[]" value="10h-11h">
+                                            <label for="turno3">10h-11h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno4" name="turnos[]" value="11h-12h">
+                                            <label for="turno4">11h-12h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno5" name="turnos[]" value="14h-15h">
+                                            <label for="turno5">14h-15h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno6" name="turnos[]" value="15h-16h">
+                                            <label for="turno6">15h-16h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno7" name="turnos[]" value="16h-17h">
+                                            <label for="turno7">16h-17h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno8" name="turnos[]" value="17h-18h">
+                                            <label for="turno8">17h-18h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno9" name="turnos[]" value="18h-19h">
+                                            <label for="turno9">18h-19h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno10" name="turnos[]" value="19h-20h">
+                                            <label for="turno10">19h-20h</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="checkbox" id="turno11" name="turnos[]" value="20h-21h">
+                                            <label for="turno11">20h-21h</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group obs-input">
+                                    <div>
+                                        <label for="observacao">Alguma observação sobre horários?</label>
+                                    </div>
+                                    <div class="input-text">
+                                        <textarea id="observacao" name="observação sobre horários"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="slide-form" id="slide-form-5">
+                                <div class="options-group">
+                                    <div class="options-title">
+                                        <h3>Você tem interesse em entrar em turmas reduzidas? (até 4 pessoas)</h3>
+                                    </div>
+                                    <div class="options-inputs">
+                                        <div class="options-input">
+                                            <input type="radio" id="turma-sim" name="interesse em turmas reduzidas" value="sim">
+                                            <label for="turma-sim">Sim, se for financeiramente vantajoso</label>
+                                        </div>
+                                        <div class="options-input">
+                                            <input type="radio" id="turma-nao" name="interesse em turmas reduzidas" value="não">
+                                            <label for="turma-nao">Não, prefiro individual</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="btn-form">
+                                <button type="button" onclick="changeSlide(-1)" class="back-btn">Anterior</button>
+                                <button type="button" onclick="changeSlide(1)" class="next-btn">Próximo</button>
+                                <button type="submit" class="submit-btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="container-content">
+                        <div class="picture">
+                            <img class="canguru" src="assets/img/canguru.JPG" alt="Amanda e um canguru">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">SOBRE</h1>
+                            <div class="description">
+                                <p>
+                                    <span>Meu nome é Amanda. Nasci em João Pessoa na Paraíba e sempre fui apaixonada por Inglês</span>
+                                </p>
+                                <p><span>Como uma boa Libriana indecisa, </span>
+                                    optei por seguir os passos do meu pai na Engenharia Civil, onde sou formada pela UFPB, mas lá dentro eu sempre soube que o Inglês era a minha
+                                    <span>paixão.</span>
+                                <p><span>Morei 1 ano na Austrália</span> 
+                                    durante a minha graduação. Lá tive a certeza que era com isso que eu queria trabalhar e retornei ao Brasil para iniciar a minha carreira como Professora de Inglês.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="feedback" class="container-content">
+                <h3>feedback</h3>
+            </section>
+            <section id="faq" class="container-content">
+                <div class="info">
+                    <h1 class="title">Perguntas Frequentes (FAQ)</h3>
+                <div class="faq-box" >
+                    <ul>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Quanto tempo duram os cursos?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>As aulas são ministradas online ou presencialmente?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Quais materiais são fornecidos com o curso?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Posso receber um certificado ao concluir?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Existem pré-requisitos para se inscrever nos cursos?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Qual é o tamanho da turma?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Há alguma flexibilidade na programação das aulas?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Existem aulas experimentais disponíveis?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Vocês oferecem cursos especializados, como Inglês para Negócios ou Inglês Acadêmico?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                        <li class="pergunta">
+                            <details>
+                                <summary>Existe algum suporte disponível para alunos que precisam de ajuda extra?</summary>
+                                <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere architecto alias molestiae officiis pariatur odit sapiente tenetur, reprehenderit quibusdam deleniti porro est aliquam eum voluptate similique, excepturi suscipit atque?</p>
+                                </details>
+                        </li>
+                </ul>
+                    
+                </div>
+            </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <p>all rights reserved yada yada</p>
+    </footer>
+        <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
