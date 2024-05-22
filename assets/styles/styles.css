@@ -8,7 +8,6 @@
     --vermelho-transp: #f64141b7;
     --amarelo: #FBDF10;
     --background: #f0f0f0;
-    --background-menu: #f0f0f0;
     --preto: #2c2c2c;
 }
 
@@ -524,8 +523,8 @@ nav ul li:last-child a {
     margin: auto;
     display: flex;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.12);
-    background-color: rgb(246, 246, 234);
+    box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.219);
+    background-color: var(--background);
 }
 
 .form-img {
@@ -833,10 +832,6 @@ nav ul li:last-child a {
 
 /*SOBRE*/
 #about {
-    background-image: url(../img/SOBRE-background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     justify-content: space-evenly;
 }
 
