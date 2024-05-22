@@ -155,6 +155,23 @@ carousel();
 function dropdownAberto() {
   document.querySelector(".details").open = true;
 }
+//fechar automaticamente o FAQ
+
+const perguntas = document.querySelectorAll(".openable");
+
+perguntas.forEach((detail) => {
+  detail.addEventListener("toggle", () => {
+    if (detail.open) openFAQElement(detail);
+  });
+});
+
+function openFAQElement(target) {
+  perguntas.forEach((detail) => {
+    if (detail !== target) {
+      detail.open = false;
+    }
+  });
+}
 
 // Tratamento de dados recebidos pelo Form
 
