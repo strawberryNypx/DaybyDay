@@ -167,35 +167,35 @@ nav ul li:last-child a {
 
 
 /* Componentes pagina Home */
-.picture .img-main {
-    width: 50vw; 
+#home .img-main {
+    width: 43vw; 
     height: auto; 
     position: absolute; 
     bottom: 0px;
     right: 2vw; 
 }
-.picture .img-vector {
+#home .img-vector {
     width: 45vw;
     position: absolute;
     right: -1vw;
     bottom: 0px;
     z-index: -1;
 }
-.picture .img-bubble {
+#home .img-bubble {
     width: 12vw; 
     height: auto; 
     position: absolute; 
     bottom: 2vw;
     right: -2vw; 
 }
-.picture .img-bar {
+#home .img-bar {
     width: 12vw; 
     height: auto; 
     position: absolute; 
     bottom: -2vw;
     left: 2vw; 
 }
-.picture .img-bar-alt {
+#home .img-bar-alt {
     width: 14vw; 
     height: auto; 
     position: absolute; 
@@ -349,17 +349,20 @@ nav ul li:last-child a {
 /*"Grid" dos serviços*/
 .slide.first {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .slide.first h1 {
     position: absolute;
     top: 0;
     left: 5%;
-    background-color: white;
+    background-color: #F0F0F0;
 }
 
 .fakegrid {
     display: flex;
+    
     border: 1px solid var(--azul);
     padding: 1rem;
     width: fit-content;
@@ -818,8 +821,16 @@ nav ul li:last-child a {
 }
 
 /*SOBRE*/
+#about {
+    justify-content: space-evenly;
+}
+
 #about .picture {
     max-width: 40%;
+}
+
+#about img {
+    max-width: 100%;
 }
 
 #about p {
