@@ -343,29 +343,8 @@ nav ul li:last-child a {
     border-radius: 50%;
 }
 
-#sub-title-area {
-    margin-bottom: 1rem;
-    display: inline-block;
-}
-
-#sub-title-background {
-    background-color: #FF4646;
-    width: 260px;
-    text-align: center;
-    border-radius: 25px;
-    display: inline-block;
-}
-
-#second-title {
-    display: inline-block;
-}
-
-.sub-title {
-    display: inline-block;
-}
-
 .slide2 {
-    width: 610px;
+    width: 38.125rem;
     gap: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -373,7 +352,7 @@ nav ul li:last-child a {
 }
 
 .slide2 .title {
-    margin-top: 2rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -383,7 +362,7 @@ nav ul li:last-child a {
 
 .method-number {
     background-color: #FF4646;
-    width: 30px;
+    width: 1.875rem;
     border-radius: 50%;
     text-align: center;
     justify-content: center;
@@ -393,42 +372,40 @@ nav ul li:last-child a {
 .items-div {
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 
 
 .method-info {
     width: fit-content;
-    max-width: 600px;
+    max-width: 37.5rem;
+    height: 5rem;
 }
 
 
 .div-textos {
-    margin-left: 16px;
+    margin-left: 1.5rem;
 }
 
 
 .div-numeros {
     z-index: 0;
     position: absolute;
+    margin-left: 0.5rem;
 }
-
-.div-textos {
-    margin-left: 16px;
-}
-
 
 #circle {
     background-color: #FF4646;
     text-align: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 6.25rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 #circle-text {
-    line-height: 120px;
+    line-height: 7.5rem;
 }
 
 .detail {
@@ -437,7 +414,7 @@ nav ul li:last-child a {
 }
 
 .detail-text {
-    width: 200px;
+    width: 12.5rem;
     text-align: center;
 }
 
@@ -882,61 +859,61 @@ nav ul li:last-child a {
     #sub-title-background {
         font-size: 18px;
         width: fit-content;
-        max-width: 220px;
+        max-width: 24vw;
         display: inline-block;
     }
 
     #second-title {
-        font-size: 16px;
-        max-width: 280px;
-        line-height: 20px;
+        font-size: 1.125rem;
+        max-width: 80vw;
+        line-height: 1.25rem;
         display: inline-block;
     }
 
     .method-title {
-        font-size: 15px;
+        font-size: 0.938rem;
         text-align: center;
         width: fit-content;
     }
 
     .div-numeros {
-        padding-left: 7px;
+        padding-left: 0.438rem;
     }
 
     .method-number {
-        font-size: 14px;
+        font-size: 0.875rem;
         text-align: center;
         justify-content: center;
-        width: 18px;
+        width: 1.125rem
     }
 
     .div-textos {
         width: fit-content;
-        max-width: 546px;
+        max-width: 34.125rem;
         height: fit-content;
-        max-height: 400px;
+        max-height: 25rem;
     }
 
     .method-info {
-        font-size: 14px;
+        font-size: 0.875rem;
 
     }
 
     #circle {
-        width: 70px;
-        height: 70px;
+        width: 4.375rem;
+        height: 4.375rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     #circle-text {
-        font-size: 18px;
-        line-height: 70px;
+        font-size: 1.125rem;
+        line-height: 4.375rem;
     }
 
     .detail-text {
-        font-size: 16px;
-        max-width: 150px;
+        font-size: 1rem;
+        max-width: 9.375;
         text-align: center;
         
     }
@@ -1035,33 +1012,35 @@ nav ul li:last-child a {
 
 @media screen and (max-width: 586px) {
     #sub-title-background {
-        font-size: 14px;
+        font-size: 0.875;
         width: fit-content;
-        max-width: 165px;
+        max-width: 10.313rem;
         display: inline-block;
     }
 
     #second-title {
-        font-size: 12px;
-        max-width: 180px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        max-width: 11.25rem;
+        line-height: 1.25rem;
         display: inline-block;
     }
 
     .div-textos {
         width: fit-content;
-        max-width: 500px;
+        max-width: 31.25rem;
         height: fit-content;
-        max-height: 400px;
+        max-height: 25rem;
     }
 
     .method-info {
-        font-size: 14px;
+        font-size: 0.875rem;
+        height: 6rem;
+        max-width: 28.5rem;
     }
 
     .detail-text {
-        font-size: 14px;
-        max-width: 120px;
+        font-size: 0.875rem;
+        max-width: 7.5rem;
         text-align: center;
         
     }
@@ -1078,10 +1057,10 @@ nav ul li:last-child a {
         margin-top: 4rem;
     }
     .div-textos .method-info {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
     .div-textos {
-        width: 480px;
+        width: 30rem;
     }
 }
 
@@ -1102,21 +1081,21 @@ nav ul li:last-child a {
     }
 
     .div-textos {
-        width: 410px;
+        width: 25.225rem;
     }
 
     .slide2 .title {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
     .slide2 .sub-title{
-        font-size: 15px;
+        font-size: 0.938rem;
     }
     #sub-title-background {
-        width: 200px;
+        width: 12.5rem;
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 458px) {
     .slide.first .fakegrid {
         width: 370px;
     }
@@ -1142,8 +1121,8 @@ nav ul li:last-child a {
     }
 
     .div-textos {
-        width: 350px;
-        font-size: 10px;
+        width: 21.875rem;
+        font-size: 0.625rem;
     }
 
     .slide2 {
@@ -1175,8 +1154,16 @@ nav ul li:last-child a {
 
     .slide2 {
         width: fit-content;
-        max-width: 425px;
+        max-width: 26.563rem;
         height: fit-content;
+    }
+
+    .items-div {
+        width: 20rem;
+    }
+
+    .method-info {
+        height: 7rem;
     }
 
     .sub-title {
@@ -1184,41 +1171,41 @@ nav ul li:last-child a {
     }
 
     #sub-title-background {
-        font-size: 14px;
+        font-size: 0.875rem;
         width: fit-content;
-        max-width: 180px;
+        max-width: 11.25rem;
         display: inline-block;
     }
 
     #second-title {
-        font-size: 12px;
-        max-width: 180px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        max-width: 11.25rem;
+        line-height: 1.25rem;
         display: inline-block;
     }
 
     .slide3 {
         height: fit-content;
-        max-width: 425px;
+        max-width: 26.563rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     #circle {
-        width: 70px;
-        height: 70px;
+        width: 4.375rem;
+        height: 4.375rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     #circle-text {
-        font-size: 18px;
-        line-height: 70px;
+        font-size: 1.125rem;
+        line-height: 4.375rem;
     }
 
     .detail-text {
-        font-size: 12px;
-        max-width: 100px;
+        font-size: 0.75rem;
+        max-width: 6.25rem;
         text-align: center;
         
     }
@@ -1262,8 +1249,8 @@ nav ul li:last-child a {
     }
 
     .div-textos {
-        width: 350px;
-        font-size: 10px;
+        width: 18rem;
+        font-size: 0.625rem;
     }
 
     .slide2 {
@@ -1284,9 +1271,9 @@ nav ul li:last-child a {
     }
     .slide2 {
         width: fit-content;
-        max-width: 375px;
+        max-width: 23.438rem;
         height: fit-content;
-        max-height: 3750px;
+        max-height: 234.375rem;
         gap: 1rem;
     }
     
@@ -1301,14 +1288,14 @@ nav ul li:last-child a {
     #sub-title-background {
         font-size: 13px;
         width: fit-content;
-        max-width: 140px;
+        max-width: 8.75rem;
         display: inline-block;
     }
 
     #second-title {
         font-size: 10px;
-        max-width: 160px;
-        line-height: 16px;
+        max-width: 10rem;
+        line-height: 1rem;
         display: inline-block;
     }
 
@@ -1319,55 +1306,56 @@ nav ul li:last-child a {
     }
 
     .div-numeros {
-        padding-left: 7px;
+        padding-left:0.438rem;
     }
 
     .method-number {
         font-size: 14px;
         text-align: center;
         justify-content: center;
-        width: 18px;
+        width: 1.125rem;
     }
 
     .div-textos {
         width: fit-content;
-        max-width: 300px;
+        max-width: 18.75rem;
         height: fit-content;
-        max-height: 400px;
+        max-height: 25rem;
     }
 
     .method-info {
-        font-size: 14px;
+        font-size: 12px;
+        width: 17rem;
     }
 
     .slide3 {
         height: fit-content;
-        max-width: 425px;
+        max-width: 26.563rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     #circle {
-        width: 50px;
-        height: 50px;
+        width: 3.125;
+        height: 3.125;
         margin-left: auto;
         margin-right: auto;
     }
 
     #circle-text {
         font-size: 16px;
-        line-height: 50px;
+        line-height: 3.125rem;
     }
 
     .detail-img {
         border-radius: 50%;
-        width: 25px;
-        width: 25px;
+        width: 1.563rem;
+        width: 1.563rem;
     }
 
     .detail-text {
         font-size: 10px;
-        max-width: 100px;
+        max-width: 6.25rem;
         text-align: center;
         
     }
@@ -1400,10 +1388,10 @@ nav ul li:last-child a {
     }
 
     .items-div {
-        width: 250px;
+        width: 15.625;
     }
     .method-info {
-        font-size: 13px;
+        font-size: 0.813rem;
     }
     .method-number {
         margin-right: 1rem;
