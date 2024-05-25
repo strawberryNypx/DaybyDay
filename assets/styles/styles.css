@@ -6,8 +6,9 @@
     --azul: #0071ED;
     --vermelho: #F64141;
     --vermelho-transp: #f64141b7;
-    --amarelo: #FFD600;
-    --backgroud: rgb(246, 246, 234);
+    --amarelo: #FBDF10;
+    --background: #f0f0f0;
+    --preto: #2c2c2c;
 }
 
 * {
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-    background-color: var(--backgroud)
+    background-color: var(--background)
 }
 
 *::-webkit-scrollbar {
@@ -47,7 +48,7 @@ body {
     height: 100vh;
 }
 
-section {
+.section-scroll {
     scroll-snap-align: start;
     height: 100vh;
     transition: scroll-snap-align 2s ease;
@@ -59,9 +60,10 @@ section {
     display: flex;
     align-items: center;
     position: fixed;
-    margin: 20px 70px 20px 40px;
+    margin: 0 70px 20px 40px;
+    padding-top: 20px;
     z-index: 1;
-
+    background-color: var(--background);
     /*para o menu dropdown do sobre não ficar escondido*/
     width: 100%;
     overflow: visible;
@@ -76,6 +78,8 @@ nav {
 
 nav .logo {
     margin-right: 70px;
+    width: 80px;
+    height: 80px;
 }
 
 nav ul {
@@ -86,7 +90,7 @@ nav ul {
 nav ul li a {
     margin-right: 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--preto)
 }
 
 nav ul li:last-child a {
@@ -105,6 +109,7 @@ nav ul li:last-child a {
 }
 
 .dropdown details p {
+    background-color: var(--background);
     padding: 1rem;
     display: inline;
     position: absolute;
@@ -134,7 +139,7 @@ nav ul li:last-child a {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #000;
+    color: var(--preto);
     font-weight: 400;
 }
 
@@ -149,18 +154,68 @@ nav ul li:last-child a {
 /* Conteúdo do site */
 .container-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.container-content .picture {
-    max-width: 50%;
+#home .info {
+    margin-left: 10vw;
 }
 
-.picture img {
-    max-width: 100%;
+@media screen and (max-width:986px) {
+    #home.infor {
+        margin-left: 0;
+    }
 }
+
+
+/* Componentes pagina Home */
+#home .img-main {
+    width: 43vw;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 2vw;
+}
+
+#home .img-vector {
+    width: 45vw;
+    position: absolute;
+    right: -1vw;
+    bottom: 0px;
+    z-index: -1;
+}
+
+#home .img-bubble {
+    width: 12vw;
+    height: auto;
+    position: absolute;
+    bottom: 2vw;
+    right: -2vw;
+}
+
+#home .img-bar {
+    width: 12vw;
+    height: auto;
+    position: absolute;
+    bottom: -2vw;
+    left: 2vw;
+}
+
+#home .img-bar-alt {
+    width: 14vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -9vw;
+}
+
+#who.container-content {
+    justify-content: center;
+}
+
 
 .title {
     font-family: 'Julius Sans One', sans-serif;
@@ -184,7 +239,7 @@ nav ul li:last-child a {
 .info a {
     text-decoration: none;
     margin-left: 10px;
-    color: #000;
+    color: var(--preto);
 }
 
 /* css do carrosel */
@@ -211,7 +266,7 @@ nav ul li:last-child a {
 
 }
 
-/* Utilezem a class slide para customizar as tags h1, p ou img. Exemplo: .slide h1 | .slide p | .slide img */
+/* Utilezem a class slide para customizar as tags h1, p . Exemplo: .slide h1 | .slide p | */
 .slide {
     width: 20%;
     padding: 20px;
@@ -229,7 +284,7 @@ nav ul li:last-child a {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 100px;
+    bottom: 80px;
 }
 
 .manual-btn,
@@ -248,7 +303,7 @@ nav ul li:last-child a {
 
 .manual-btn:hover,
 .navigation-auto div:hover {
-    background: #000;
+    background: var(--preto);
 }
 
 #radio1:checked~.first {
@@ -265,19 +320,19 @@ nav ul li:last-child a {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background: #000;
+    background: var(--preto);
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background: #000;
+    background: var(--preto);
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background: #000;
+    background: var(--preto);
 }
 
 /* Botões */
-.info .btn {
+.btn {
     width: 159px;
     height: 49px;
     border-radius: 32px;
@@ -304,17 +359,20 @@ nav ul li:last-child a {
 /*"Grid" dos serviços*/
 .slide.first {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .slide.first h1 {
     position: absolute;
     top: 0;
     left: 5%;
-    background-color: white;
+    background-color: #F0F0F0;
 }
 
 .fakegrid {
     display: flex;
+
     border: 1px solid var(--azul);
     padding: 1rem;
     width: fit-content;
@@ -442,8 +500,8 @@ nav ul li:last-child a {
     margin: auto;
     display: flex;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.12);
-    background-color: rgb(246, 246, 234);
+    box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.219);
+    background-color: var(--background);
 }
 
 .form-img {
@@ -750,8 +808,17 @@ nav ul li:last-child a {
 }
 
 /*SOBRE*/
+#about {
+    justify-content: space-evenly;
+}
+
+
 #about .picture {
     max-width: 40%;
+}
+
+#about img {
+    max-width: 100%;
 }
 
 #about p {
@@ -764,63 +831,72 @@ nav ul li:last-child a {
 }
 
 /*FAQ*/
+#faq {
+    height: auto;
+    margin-top: auto;
+    justify-content: center;
+}
+
 #faq h1 {
     width: 100%;
     text-align: center;
 }
 
-.faq-container {
-    display: block;
-    width: 70%;
-}
-
 .faq-box {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 2rem;
+    width: 65%;
+    padding: 5.5rem 0;
     margin: 1rem;
-    background-color: var(--backgroud);
+    background-color: var(--background);
 }
 
 .pergunta summary {
-    list-style: none;
-    color: var(--azul);
-    font-size: x-large;
+    cursor: pointer;
+    color: var(--preto);
+    font-size: 20px;
     font-weight: 700;
     padding: 1rem;
-    display: flex;
-    align-items: center;
-    position: relative;
+}
+
+.pergunta {
+    border-top: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+.pergunta:first-of-type {
+    border: none;
+}
+
+.pergunta summary::marker {
+    content: '+  ';
+    color: var(--azul);
+}
+
+
+.faq-box details[open]>summary::marker {
+    content: '-   ';
+    color: var(--vermelho);
 }
 
 .resposta {
+    color: gray;
     font-size: large;
-    padding: 0 2rem;
+    margin: 0 3rem 2rem 3rem;
+    padding: 0 1rem;
+    border-left: 3px solid var(--vermelho);
 }
 
-.faq-box summary::after {
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    background: url('../img/arrow.svg');
-    background-size: cover;
-    margin-left: .75em;
-    transition: 0.2s;
-    transition: all 400ms ease-in-out;
-
-}
-
-.faq-box details[open] {
-    display: block;
-}
-
-.faq-box details[open]>summary::after {
-    transform: rotate(180deg);
-
+.more {
+    display: flex;
+    flex-direction: row;
 
 }
 
 
 /* Telas menores */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
     .container-header {
         width: 100%;
     }
@@ -840,9 +916,9 @@ nav ul li:last-child a {
 
     }
 
-    .container-content .picture {
+    /* .picture .img-main , .picture .img-vector{
         display: none;
-    }
+    } */
 
     .info .title {
         max-width: 80vw;
@@ -854,20 +930,6 @@ nav ul li:last-child a {
 
     .info .btn {
         margin-bottom: 40px;
-    }
-
-    #sub-title-background {
-        font-size: 18px;
-        width: fit-content;
-        max-width: 24vw;
-        display: inline-block;
-    }
-
-    #second-title {
-        font-size: 1.125rem;
-        max-width: 80vw;
-        line-height: 1.25rem;
-        display: inline-block;
     }
 
     .method-title {
@@ -923,7 +985,7 @@ nav ul li:last-child a {
     }
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 900px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -1011,20 +1073,6 @@ nav ul li:last-child a {
 }
 
 @media screen and (max-width: 586px) {
-    #sub-title-background {
-        font-size: 0.875;
-        width: fit-content;
-        max-width: 10.313rem;
-        display: inline-block;
-    }
-
-    #second-title {
-        font-size: 0.75rem;
-        max-width: 11.25rem;
-        line-height: 1.25rem;
-        display: inline-block;
-    }
-
     .div-textos {
         width: fit-content;
         max-width: 31.25rem;
@@ -1048,7 +1096,6 @@ nav ul li:last-child a {
     .corner1 {
         margin-top: 0.9rem;
     }
-    
 }
 
 @media screen and (max-width:550px) {
@@ -1064,18 +1111,22 @@ nav ul li:last-child a {
     }
 }
 
+
 @media screen and (max-width: 515px) {
 
     #who .description {
         font-size: 15px;
     }
+
     .slide.first .fakegrid {
         width: 410px;
     }
+
     .slide.first .title {
         font-size: 30px;
         margin-top: 2rem;
     }
+
     .slide.first .fakegrid {
         margin-top: 2rem;
     }
@@ -1090,19 +1141,18 @@ nav ul li:last-child a {
     .slide2 .sub-title{
         font-size: 0.938rem;
     }
-    #sub-title-background {
-        width: 12.5rem;
-    }
 }
 
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 440px) {
     .slide.first .fakegrid {
         width: 370px;
     }
+
     .slide.first .title {
         font-size: 30px;
         margin-top: 2rem;
     }
+
     .slide.first .fakegrid {
         margin-top: 2rem;
     }
@@ -1116,6 +1166,7 @@ nav ul li:last-child a {
     .slide.first .fakegrid img {
         width: 60px;
     }
+
     .slide.first .fakegrid p {
         font-size: 12px;
     }
@@ -1129,27 +1180,30 @@ nav ul li:last-child a {
         margin-top: 6rem;
     }
 }
+
 /* Responsividade 425px*/
 @media screen and (max-width: 426px) {
     .slide.first {
         margin-top: 4rem;
     }
+
     .info .title {
         margin-top: 5.5rem;
     }
+
     .info .description {
         margin-bottom: 0;
         font-size: 18px;
     }
-    
+
     .slide.first .title {
         font-size: 35px;
     }
 
     .fakegrid .left-side,
     .fakegrid .right-side {
-    padding-left: 2rem;
-    padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
     }
 
     .slide2 {
@@ -1164,24 +1218,6 @@ nav ul li:last-child a {
 
     .method-info {
         height: 7rem;
-    }
-
-    .sub-title {
-        display: inline-block;
-    }
-
-    #sub-title-background {
-        font-size: 0.875rem;
-        width: fit-content;
-        max-width: 11.25rem;
-        display: inline-block;
-    }
-
-    #second-title {
-        font-size: 0.75rem;
-        max-width: 11.25rem;
-        line-height: 1.25rem;
-        display: inline-block;
     }
 
     .slide3 {
@@ -1223,14 +1259,17 @@ nav ul li:last-child a {
     }
 }
 
-@media  screen and (max-width: 390px) {
-        .slide.first .fakegrid {
+
+@media screen and (max-width: 390px) {
+    .slide.first .fakegrid {
         width: 370px;
     }
+
     .slide.first .title {
         font-size: 30px;
         margin-top: 2rem;
     }
+
     .slide.first .fakegrid {
         margin-top: 2rem;
     }
@@ -1244,6 +1283,7 @@ nav ul li:last-child a {
     .slide.first .fakegrid img {
         width: 60px;
     }
+
     .slide.first .fakegrid p {
         font-size: 12px;
     }
@@ -1256,47 +1296,30 @@ nav ul li:last-child a {
     .slide2 {
         margin-top: 6rem;
     }
-}    
-
+} 
 /* 375px */
 @media screen and (max-width: 376px) {
+
     .fakegrid .left-side,
     .fakegrid .right-side {
-    padding-left: 0.5rem;
-    padding-right: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.2rem;
     }
 
     .slide.first .title {
         font-size: 22px;
     }
+
     .slide2 {
         width: fit-content;
-        max-width: 23.438rem;
+        max-width: 375px;
         height: fit-content;
-        max-height: 234.375rem;
+        max-height: 3750px;
         gap: 1rem;
     }
-    
+
     .title {
         font-size: 24px;
-    }
-
-    .sub-title {
-        display: inline-block;
-    }
-
-    #sub-title-background {
-        font-size: 13px;
-        width: fit-content;
-        max-width: 8.75rem;
-        display: inline-block;
-    }
-
-    #second-title {
-        font-size: 10px;
-        max-width: 10rem;
-        line-height: 1rem;
-        display: inline-block;
     }
 
     .method-title {
@@ -1377,14 +1400,16 @@ nav ul li:last-child a {
     .info .title {
         font-size: 25px;
     }
+
     .info .description {
         font-size: 16px;
         text-indent: 2rem;
     }
+
     .fakegrid .left-side,
     .fakegrid .right-side {
-    padding-left: 0.2rem;
-    padding-right: 0
+        padding-left: 0.2rem;
+        padding-right: 0
     }
 
     .items-div {
