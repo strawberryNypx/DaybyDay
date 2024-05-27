@@ -94,6 +94,7 @@ nav ul li a {
 }
 
 nav ul li:last-child a {
+    margin-left: 20px;
     margin-right: 5px;
 }
 
@@ -109,7 +110,8 @@ nav ul li:last-child a {
 }
 
 .dropdown details p {
-    background-color: var(--background);
+    background: #f0f0f0;
+    background: linear-gradient(180deg, #f0f0f0ce 85%, #f0f0f000 100%);
     padding: 1rem;
     display: inline;
     position: absolute;
@@ -1448,7 +1450,7 @@ nav ul li:last-child a {
     }
 }
 
-.slide3 img{
+.slide3 img {
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -1523,16 +1525,19 @@ nav ul li:last-child a {
     margin-bottom: 15px;
 }
 
+.icons a {
+    margin-left: 36px;
+}
+
 .icon {
     width: 30px;
     height: 30px;
-    margin-left: 36px;
-    transition: filter 0.3s;
     margin-bottom: 10px;
+    transition: filter 0.3s;
     filter: brightness(0) invert(1);
 }
 
-.icon:first-child {
+.icons a:first-child {
     margin-left: 0;
 }
 
