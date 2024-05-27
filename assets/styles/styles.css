@@ -1681,6 +1681,7 @@ nav ul li:last-child a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem
 }
 
 .footer p {
@@ -1717,5 +1718,5 @@ nav ul li:last-child a {
 }
 
 .icon:hover {
-    filter: brightness(0) invert(1); 
+    filter: brightness(0); 
 }
