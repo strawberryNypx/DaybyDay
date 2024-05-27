@@ -501,7 +501,9 @@ nav ul li:last-child a {
 
 .detail-img {
     border-radius: 50%;
+    width: 60px;
 }
+
 
 .top-left {
     align-items: end;
@@ -981,8 +983,9 @@ nav ul li:last-child a {
     flex-shrink: 0;
     gap: 2rem;
     width: 65%;
-    padding: 5.5rem 0;
-    margin: 1rem;
+    padding: 5rem 0;
+    margin: 1rem ;
+    margin-bottom: 0;
     background-color: var(--background);
 }
 
@@ -1021,11 +1024,11 @@ nav ul li:last-child a {
     border-left: 3px solid var(--vermelho);
 }
 
-.more {
+/* .more {
     display: flex;
     flex-direction: row;
 
-}
+} */
 
 
 /* Telas menores */
@@ -1664,4 +1667,55 @@ nav ul li:last-child a {
     .slide2 .title {
         margin-top: 4.5rem;
     }
+}
+#faq{
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+   
+    width: 100%;
+    height: auto;
+    background-color: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none; 
+    color: black;
+
+}
+
+.icons {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 36px;
+    transition: filter 0.3s;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1); 
+}
+
+.icon:first-child {
+    margin-left: 0;
+}
+
+.icon:hover {
+    filter: brightness(0) invert(1); 
 }
