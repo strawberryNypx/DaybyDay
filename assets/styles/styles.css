@@ -871,6 +871,57 @@ nav ul li:last-child a {
     font-weight: 700;
 }
 
+/*FEEDBACK*/
+#feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#feedback .info .title {
+    margin: 5rem auto 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.fb-wrap {
+    width: 60vw;
+    height: 70vh;
+    background-image: url('../img/DBD_PADRONAGEM.svg');
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-container {
+    background-color: var(--background);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fb-comment {
+    padding: 3rem;
+}
+
+.fb-comment p {
+    font-size: large;
+    margin: 1rem;
+}
+
+.fb-name {
+    font-weight: 700;
+}
+
+.fb-name .stars {
+    margin-left: 3rem;
+}
+
+
+
 /*FAQ*/
 #faq {
     height: auto;
@@ -1070,6 +1121,12 @@ nav ul li:last-child a {
         width: 100%;
         display: flex;
         z-index: 0;
+    }
+
+    /*FEEDBACK*/
+
+    .fb-wrap {
+        width: 90vw;
     }
 
     /*FAQ*/
