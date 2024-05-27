@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&display=swap');
 
 :root {
     --azul: #0071ED;
@@ -15,7 +16,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     overflow: hidden;
 }
 
@@ -32,12 +33,11 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: #f9f9f9;
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #cccccc;
+    background-color: var(--vermelho);
 }
 
 /* Scroll-Snap */
@@ -218,7 +218,7 @@ nav ul li:last-child a {
 
 
 .title {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Righteous', sans-serif;
     margin-right: auto;
     font-size: 40px;
     width: fit-content;
@@ -228,7 +228,7 @@ nav ul li:last-child a {
 }
 
 .info .description {
-    font-family: 'Karma', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     width: 500px;
     text-align: justify;
     margin-bottom: 20px;
@@ -543,7 +543,7 @@ nav ul li:last-child a {
 }
 
 .form-header h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Righteous', sans-serif;
     text-align: center;
 }
 
@@ -566,11 +566,11 @@ nav ul li:last-child a {
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: .75rem;
+    margin-bottom: .25rem;
 }
 
 .input-group input {
-    margin: .75rem .15rem;
+    margin: .5rem .15rem;
     padding: .6rem 1rem;
     border: none;
     border-radius: 10px;
@@ -594,7 +594,7 @@ nav ul li:last-child a {
 .obs-input {
     display: flex;
     flex-direction: column;
-    margin-top: .75em;
+    margin-top: .25em;
 }
 
 .input-box input:hover,
@@ -609,7 +609,7 @@ nav ul li:last-child a {
 
 .input-group label,
 .options-group h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
 }
@@ -682,7 +682,7 @@ nav ul li:last-child a {
 
 .submit-btn {
     background: linear-gradient(265deg, #0000 20%, var(--vermelho-transp) 90%);
-    background-color: #ff8c00;
+    background-color: var(--amarelo);
     transition: .75s ease-in;
 }
 
@@ -830,6 +830,97 @@ nav ul li:last-child a {
     }
 }
 
+/* feedbacks */
+
+.feedbacks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.feedbacks-container h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.feedbacks {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.fb-box {
+    max-width: 70%;
+    margin: 1em 0;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1em;
+    /* border: 2px solid var(--vermelho); */
+    box-shadow: 1px 1px 5px 2px #c4c4c4;
+}
+
+.controls-fb {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.prev-fb, .next-fb {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+    font-family: 'Righteous', sans-serif;
+}
+
+.fb-box .quote {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem .5rem;
+}
+
+.fb-box .quote img {
+    width: 50px;
+    transform: rotate(180deg);
+}
+
+.fb-content {
+    padding: .5rem 1.5rem;
+}
+
+.fb-by {
+    text-transform: uppercase;
+    font-size: small;
+    padding: 1rem 2rem 2rem;
+    letter-spacing: .25em;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.fb-by img {
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+    .feedbacks-container {
+        background-image: url(/assets/img/barras.png);
+        background-size: contain;
+    }
+
+    .fb-box {
+        max-width: 55%;
+    }
+}
+
 /*SOBRE*/
 #about {
     position: relative;
@@ -881,6 +972,7 @@ nav ul li:last-child a {
 #faq h1 {
     width: 100%;
     text-align: center;
+    font-size: 2em;
 }
 
 .faq-box {
@@ -897,7 +989,7 @@ nav ul li:last-child a {
 .pergunta summary {
     cursor: pointer;
     color: var(--preto);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     padding: 1rem;
 }
