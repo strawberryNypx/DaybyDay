@@ -965,6 +965,7 @@ nav ul li:last-child a {
     }
 
     .fb-box {
+        width: 100vw;
         max-width: 55%;
     }
 }
