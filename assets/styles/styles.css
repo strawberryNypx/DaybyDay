@@ -1540,11 +1540,6 @@ nav ul li:last-child a {
     }
 }
 
-#faq {
-    display: flex;
-    flex-direction: column;
-}
-
 .footer {
 
     width: 100%;
@@ -1557,6 +1552,8 @@ nav ul li:last-child a {
 }
 
 .footer p {
+    width: 100%;
+    text-align: center;
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
