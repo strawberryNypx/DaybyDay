@@ -1592,3 +1592,26 @@ nav ul li:last-child a {
 .icon:hover {
     filter: brightness(0) invert(1);
 }
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0,0.1);
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  #close-popup {
+    margin-top: 10px;
+  }
