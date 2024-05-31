@@ -332,8 +332,7 @@ nav ul li:last-child a {
 }
 
 /* css para a navegação manual e automatico */
-.navigation-manual,
-.navigation-auto {
+.navigation-manual {
     position: absolute;
     display: flex;
     width: 800px;
@@ -344,8 +343,7 @@ nav ul li:last-child a {
     bottom: 80px;
 }
 
-.manual-btn,
-.navigation-auto div {
+.manual-btn {
     border: 2px solid rgba(0, 0, 0, 0.421);
     padding: 5px;
     border-radius: 10px;
@@ -353,13 +351,11 @@ nav ul li:last-child a {
     transition: .5s;
 }
 
-.manual-btn:not(:last-child),
-.navigation-auto div:not(:last-child) {
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.manual-btn:hover,
-.navigation-auto div:hover {
+.manual-btn:hover {
     background: var(--preto);
 }
 
@@ -376,15 +372,15 @@ nav ul li:last-child a {
     margin-left: -40%;
 }
 
-#radio1:checked~.navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-manual .btn1 {
     background: var(--preto);
 }
 
-#radio2:checked~.navigation-auto .auto-btn2 {
+#radio2:checked~.navigation-manual .btn2 {
     background: var(--preto);
 }
 
-#radio3:checked~.navigation-auto .auto-btn3 {
+#radio3:checked~.navigation-manual .btn3 {
     background: var(--preto);
 }
 
@@ -1110,8 +1106,7 @@ nav ul li:last-child a {
         justify-content: center;
     }
 
-    .navigation-manual,
-    .navigation-auto {
+    .navigation-manual {
         width: 100%;
 
     }

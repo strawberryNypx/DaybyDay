@@ -3,11 +3,12 @@ function menuShow() {
   let menuMobile = document.querySelector(".mobile-menu");
   if (menuMobile.classList.contains("open")) {
     menuMobile.classList.remove("open");
-    document.querySelector(".icon").src = "assets/img/menu_white_36dp.svg";
+    document.querySelector(".menu-icon").src = "assets/img/menu_white_36dp.svg";
     steps.style.display = "flex";
   } else {
     menuMobile.classList.add("open");
-    document.querySelector(".icon").src = "assets/img/close_white_36dp.svg";
+    document.querySelector(".menu-icon").src =
+      "assets/img/close_white_36dp.svg";
     steps.style.display = "none";
   }
 }
@@ -33,48 +34,48 @@ carousel();
 
 function feedbackCarousel() {
   let count = 0;
-  const feedbacks = document.querySelectorAll('.fb-box');
+  const feedbacks = document.querySelectorAll(".fb-box");
   const intervalTime = 4000;
   let intervalId;
 
   function showFeedback(index) {
-      feedbacks.forEach((box) => box.style.display = "none");
-      feedbacks[index].style.display = "flex";
+    feedbacks.forEach((box) => (box.style.display = "none"));
+    feedbacks[index].style.display = "flex";
   }
 
   function showNextFeedback() {
-      count = (count + 1) % feedbacks.length;
-      showFeedback(count);
+    count = (count + 1) % feedbacks.length;
+    showFeedback(count);
   }
 
   function showPreviousFeedback() {
-      count = (count - 1 + feedbacks.length) % feedbacks.length;
-      showFeedback(count);
+    count = (count - 1 + feedbacks.length) % feedbacks.length;
+    showFeedback(count);
   }
 
-  const startInterval = () => intervalId = setInterval(showNextFeedback, intervalTime);
+  const startInterval = () =>
+    (intervalId = setInterval(showNextFeedback, intervalTime));
 
   const stopInterval = () => clearInterval(intervalId);
 
   startInterval();
 
-  document.querySelector('.next-fb').addEventListener('click', () => {
-      showNextFeedback();
-      stopInterval();
-      startInterval();
+  document.querySelector(".next-fb").addEventListener("click", () => {
+    showNextFeedback();
+    stopInterval();
+    startInterval();
   });
 
-  document.querySelector('.prev-fb ').addEventListener('click', () => {
-      showPreviousFeedback();
-      stopInterval();
-      startInterval();
+  document.querySelector(".prev-fb ").addEventListener("click", () => {
+    showPreviousFeedback();
+    stopInterval();
+    startInterval();
   });
 
   showFeedback(count);
 }
 
-document.addEventListener('DOMContentLoaded', feedbackCarousel);
-
+document.addEventListener("DOMContentLoaded", feedbackCarousel);
 
 const progress = document.getElementById("progress");
 const formSteps = document.querySelectorAll(".step-form");
@@ -166,7 +167,6 @@ inputTel.addEventListener("input", function () {
   );
   this.value = formattedTel;
 });
-
 
 //dropdonw do Sobre no menu
 function dropdownAberto() {
