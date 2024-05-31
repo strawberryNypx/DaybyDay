@@ -1598,5 +1598,5 @@ nav ul li:last-child a {
 }
 
 .icon:hover {
-    filter: brightness(0) invert(1);
+    filter: brightness(1) invert(0);
 }
