@@ -191,21 +191,19 @@ function openFAQElement(target) {
 
 // Tratamento de dados recebidos pelo Form
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded and parsed");
   const formSubmit = (event) => {
     event.preventDefault();
-    console.log("Form submission prevented");
-  
+
     const form = event.target;
     const formData = new FormData(form);
     const data = {};
-  
+
     formData.forEach((value, key) => {
       data[key] = value;
     });
-  
-    console.log("Forma data: ", data);
-  
+
+    showThankYouPopup();
+
     fetch(form.action, {
       method: "POST",
       headers: {
@@ -214,62 +212,55 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       body: JSON.stringify(data),
     })
-      .then((response) => {
-      if (!response.ok) {
-        return response.text().then((text) => { 
-          throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
-        });
-      }
-      
-      return response.json();
-    })  
-      
-      .then((result) => {
-        console.log("Sucess", result);
-        showThankYouPopup();
+      .then(async (response) => {
+        console.log("response", response);
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(
+            `HTTP error! status: ${response.status}, response: ${text}`
+          );
+        }
+
+        return response.json();
       })
+
+      .then((result) => {})
       .catch((error) => {
         console.error("Error", error);
       });
   };
-  
+
   const showThankYouPopup = () => {
     const popup = document.getElementById("thank-you-popup");
+    console.log("Popup element: ", popup);
     if (popup) {
-      console.log("Popup found, displaying it.");
       popup.classList.remove("hidden");
     } else {
       console.error("Popup not found");
     }
   };
-  
+
   const closePopup = () => {
     const popup = document.getElementById("thank-you-popup");
     if (popup) {
       popup.classList.add("hidden");
-      console.log("Popup closed.");
     } else {
       console.error("Popup not found.");
     }
   };
-  
-  const form = document.getElementById("join-form"); 
+
+  const form = document.getElementById("join-form");
   const closePopupButton = document.getElementById("close-popup");
 
   if (form) {
-    form.addEventListener("submit", formSubmit); 
-    console.log("Form submit event listener added.");
+    form.addEventListener("submit", formSubmit);
   } else {
     console.error("Form not found.");
   }
 
   if (closePopupButton) {
-    closePopupButton.addEventListener("click", closePopup); 
-    console.log("Close popup event listener added.");
+    closePopupButton.addEventListener("click", closePopup);
   } else {
     console.error("Close popup button not found.");
   }
 });
-
-
-
