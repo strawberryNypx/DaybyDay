@@ -218,6 +218,61 @@ nav ul li:last-child a {
     justify-content: center;
 }
 
+#who img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+#who .img-vetor {
+    width: 45vw;
+    position: absolute;
+    left: -5vw;
+    bottom: 0vw;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+#who .img-squares {
+    width: 50vw;
+    position: absolute;
+    left: -13vw;
+    bottom: -7vw;
+    z-index: -1;
+}
+
+#who .img-bar-alt {
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    top: 5vw;
+    right: 15vw;
+}
+
+#who .img-seta {
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    top: 20vw;
+    right: 0vw;
+}
+
+#who .img-red {
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    bottom: 0vw;
+    right: 15vw;
+}
+
+#who .img-yellow {
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    top: 5vw;
+    left: 0vw;
+}
 
 .title {
     font-family: 'Righteous', sans-serif;
@@ -1498,7 +1553,6 @@ nav ul li:last-child a {
 }
 
 .footer {
-
     width: 100%;
     height: auto;
     background-color: var(--vermelho);
@@ -1506,9 +1560,13 @@ nav ul li:last-child a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem 2rem;
 }
 
 .footer p {
+
+    width: 100%;
+    text-align: center;
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
