@@ -33,48 +33,48 @@ carousel();
 
 function feedbackCarousel() {
   let count = 0;
-  const feedbacks = document.querySelectorAll('.fb-box');
+  const feedbacks = document.querySelectorAll(".fb-box");
   const intervalTime = 4000;
   let intervalId;
 
   function showFeedback(index) {
-      feedbacks.forEach((box) => box.style.display = "none");
-      feedbacks[index].style.display = "flex";
+    feedbacks.forEach((box) => (box.style.display = "none"));
+    feedbacks[index].style.display = "flex";
   }
 
   function showNextFeedback() {
-      count = (count + 1) % feedbacks.length;
-      showFeedback(count);
+    count = (count + 1) % feedbacks.length;
+    showFeedback(count);
   }
 
   function showPreviousFeedback() {
-      count = (count - 1 + feedbacks.length) % feedbacks.length;
-      showFeedback(count);
+    count = (count - 1 + feedbacks.length) % feedbacks.length;
+    showFeedback(count);
   }
 
-  const startInterval = () => intervalId = setInterval(showNextFeedback, intervalTime);
+  const startInterval = () =>
+    (intervalId = setInterval(showNextFeedback, intervalTime));
 
   const stopInterval = () => clearInterval(intervalId);
 
   startInterval();
 
-  document.querySelector('.next-fb').addEventListener('click', () => {
-      showNextFeedback();
-      stopInterval();
-      startInterval();
+  document.querySelector(".next-fb").addEventListener("click", () => {
+    showNextFeedback();
+    stopInterval();
+    startInterval();
   });
 
-  document.querySelector('.prev-fb ').addEventListener('click', () => {
-      showPreviousFeedback();
-      stopInterval();
-      startInterval();
+  document.querySelector(".prev-fb ").addEventListener("click", () => {
+    showPreviousFeedback();
+    stopInterval();
+    startInterval();
   });
 
   showFeedback(count);
 }
 
-document.addEventListener('DOMContentLoaded', feedbackCarousel);
-
+document.addEventListener("DOMContentLoaded", feedbackCarousel);
 
 const progress = document.getElementById("progress");
 const formSteps = document.querySelectorAll(".step-form");
@@ -167,7 +167,6 @@ inputTel.addEventListener("input", function () {
   this.value = formattedTel;
 });
 
-
 //dropdonw do Sobre no menu
 function dropdownAberto() {
   document.querySelector(".details").open = true;
@@ -191,32 +190,86 @@ function openFAQElement(target) {
 }
 
 // Tratamento de dados recebidos pelo Form
-
-const formSubmit = (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(event.target);
-  const data = {};
-
-  formData.forEach((value, key) => {
-    data[key] = value;
-  });
-
-  fetch("https://api.sheetmonkey.io/form/hGjrD1zacWrPAAu4LMLgei", {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((result) => {
-      console.log("Sucess", result);
-    })
-    .catch((error) => {
-      console.error("Error", error);
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded and parsed");
+  const formSubmit = (event) => {
+    event.preventDefault();
+    console.log("Form submission prevented");
+  
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = {};
+  
+    formData.forEach((value, key) => {
+      data[key] = value;
     });
-};
+  
+    console.log("Forma data: ", data);
+  
+    fetch(form.action, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+      if (!response.ok) {
+        return response.text().then((text) => { 
+          throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
+        });
+      }
+      
+      return response.json();
+    })  
+      
+      .then((result) => {
+        console.log("Sucess", result);
+        showThankYouPopup();
+      })
+      .catch((error) => {
+        console.error("Error", error);
+      });
+  };
+  
+  const showThankYouPopup = () => {
+    const popup = document.getElementById("thank-you-popup");
+    if (popup) {
+      console.log("Popup found, displaying it.");
+      popup.classList.remove("hidden");
+    } else {
+      console.error("Popup not found");
+    }
+  };
+  
+  const closePopup = () => {
+    const popup = document.getElementById("thank-you-popup");
+    if (popup) {
+      popup.classList.add("hidden");
+      console.log("Popup closed.");
+    } else {
+      console.error("Popup not found.");
+    }
+  };
+  
+  const form = document.getElementById("join-form"); 
+  const closePopupButton = document.getElementById("close-popup");
 
-document.querySelector(".slide-form").addEventListener("submit", formSubmit);
+  if (form) {
+    form.addEventListener("submit", formSubmit); 
+    console.log("Form submit event listener added.");
+  } else {
+    console.error("Form not found.");
+  }
+
+  if (closePopupButton) {
+    closePopupButton.addEventListener("click", closePopup); 
+    console.log("Close popup event listener added.");
+  } else {
+    console.error("Close popup button not found.");
+  }
+});
+
+
+
