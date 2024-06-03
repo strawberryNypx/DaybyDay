@@ -191,32 +191,77 @@ function openFAQElement(target) {
 }
 
 // Tratamento de dados recebidos pelo Form
+document.addEventListener("DOMContentLoaded", () => {
+  const formSubmit = (event) => {
+    event.preventDefault();
 
-const formSubmit = (event) => {
-  event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = {};
 
-  const formData = new FormData(event.target);
-  const data = {};
-
-  formData.forEach((value, key) => {
-    data[key] = value;
-  });
-
-  fetch("https://api.sheetmonkey.io/form/hGjrD1zacWrPAAu4LMLgei", {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((result) => {
-      console.log("Sucess", result);
-    })
-    .catch((error) => {
-      console.error("Error", error);
+    formData.forEach((value, key) => {
+      data[key] = value;
     });
-};
 
-document.querySelector(".slide-form").addEventListener("submit", formSubmit);
+    showThankYouPopup();
+
+    fetch(form.action, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(async (response) => {
+        console.log("response", response);
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(
+            `HTTP error! status: ${response.status}, response: ${text}`
+          );
+        }
+
+        return response.json();
+      })
+
+      .then((result) => {})
+      .catch((error) => {
+        console.error("Error", error);
+      });
+  };
+
+  const showThankYouPopup = () => {
+    const popup = document.getElementById("thank-you-popup");
+    console.log("Popup element: ", popup);
+    if (popup) {
+      popup.classList.remove("hidden");
+    } else {
+      console.error("Popup not found");
+    }
+  };
+
+  const closePopup = () => {
+    const popup = document.getElementById("thank-you-popup");
+    if (popup) {
+      popup.classList.add("hidden");
+    } else {
+      console.error("Popup not found.");
+    }
+  };
+
+  const form = document.getElementById("join-form");
+  const closePopupButton = document.getElementById("close-popup");
+
+  if (form) {
+    form.addEventListener("submit", formSubmit);
+  } else {
+    console.error("Form not found.");
+  }
+
+  if (closePopupButton) {
+    closePopupButton.addEventListener("click", closePopup);
+  } else {
+    console.error("Close popup button not found.");
+  }
+});
