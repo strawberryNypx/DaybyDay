@@ -224,11 +224,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         return response.json();
       })
-
-      .then((result) => {})
       .catch((error) => {
         console.error("Error", error);
       });
+
+      form.reset();
   };
 
   const showThankYouPopup = () => {
@@ -250,6 +250,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  window.addEventListener("click", function (event) {
+    if (event.target.classList.contains("popup")) {
+      event.target.style.display = "none";
+    }
+  });
+
   const form = document.getElementById("join-form");
   const closePopupButton = document.getElementById("close-popup");
 
@@ -261,6 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (closePopupButton) {
     closePopupButton.addEventListener("click", closePopup);
+
   } else {
     console.error("Close popup button not found.");
   }
