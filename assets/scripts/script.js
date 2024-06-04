@@ -27,7 +27,7 @@ function carousel() {
     if (counter > 3) {
       counter = 1;
     }
-  }, 4000);
+  }, 4500);
 }
 
 carousel();

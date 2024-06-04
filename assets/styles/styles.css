@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&display=swap");
 
 :root {
-    --azul: #0071ED;
-    --vermelho: #F64141;
-    --vermelho-transp: #f64141b7;
-    --amarelo: #FBDF10;
-    --background: #f0f0f0;
-    --preto: #2c2c2c;
+  --azul: #0071ed;
+  --vermelho: #f64141;
+  --vermelho-transp: #f64141b7;
+  --amarelo: #fbdf10;
+  --background: #f0f0f0;
+  --preto: #2c2c2c;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-    overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  overflow: hidden;
 }
 
 html {
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background-color: var(--background)
+  background-color: var(--background);
 }
 
 *::-webkit-scrollbar {
@@ -33,11 +33,11 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--vermelho);
+  background-color: var(--vermelho);
 }
 
 /* Scroll-Snap */
@@ -49,24 +49,23 @@ body {
 }
 
 .section-scroll {
-    scroll-snap-align: start;
-    height: 100vh;
-    transition: scroll-snap-align 2s ease;
+  scroll-snap-align: start;
+  height: 100vh;
+  transition: scroll-snap-align 2s ease;
 }
 
 /* Menu */
 .container-header {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    margin: 0 70px 20px 40px;
-    padding-top: 20px;
-    z-index: 1;
-    background-color: var(--background);
-    /*para o menu dropdown do sobre não ficar escondido*/
-    width: 100%;
-    overflow: visible;
-
+  display: flex;
+  align-items: center;
+  position: fixed;
+  margin: 0 70px 20px 40px;
+  padding-top: 20px;
+  z-index: 1;
+  background-color: var(--background);
+  /*para o menu dropdown do sobre não ficar escondido*/
+  width: 100%;
+  overflow: visible;
 }
 
 nav {
@@ -76,25 +75,44 @@ nav {
 }
 
 nav .logo {
-    margin-right: 70px;
-    width: 80px;
-    height: 80px;
+  margin-right: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  font-weight: 600;
 }
 
 nav ul li a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: var(--preto)
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--preto);
+  position: relative;
 }
 
 nav ul li:last-child a {
-    margin-left: 20px;
-    margin-right: 5px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+nav ul li a:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  background: var(--preto);
+  bottom: 0;
+  left: 50%;
+  display: block;
+  height: 1px;
+  transition: width .3s ease 0s, left .3s ease 0s;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /*Menu dropdown*/
@@ -109,11 +127,11 @@ nav ul li:last-child a {
 }
 
 .dropdown details p {
-    background: #f0f0f0;
-    background: linear-gradient(180deg, #f0f0f0ce 85%, #f0f0f000 100%);
-    padding: 1rem;
-    display: inline;
-    position: absolute;
+  background: #f0f0f0;
+  background: linear-gradient(180deg, #f0f0f0ce 85%, #f0f0f000 100%);
+  padding: 1rem;
+  display: inline;
+  position: absolute;
 }
 
 .dropdown details p a {
@@ -137,10 +155,10 @@ nav ul li:last-child a {
 
 /* Mobile-Menu */
 .nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: var(--preto);
-    font-weight: 400;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: var(--preto);
+  font-weight: 400;
 }
 
 .mobile-menu-icon {
@@ -165,7 +183,7 @@ nav ul li:last-child a {
 }
 
 @media screen and (max-width: 986px) {
-  #home.infor {
+  #home.info {
     margin-left: 0;
   }
 }
@@ -216,10 +234,10 @@ nav ul li:last-child a {
 }
 
 #who img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
 
 #who .img-vetor {
@@ -240,11 +258,11 @@ nav ul li:last-child a {
 }
 
 #who .img-bar-alt {
-    width: 10vw;
-    height: auto;
-    position: absolute;
-    top: 5vw;
-    right: 15vw;
+  width: 10vw;
+  height: auto;
+  position: absolute;
+  top: 5vw;
+  right: 15vw;
 }
 
 #who .img-seta {
@@ -256,44 +274,44 @@ nav ul li:last-child a {
 }
 
 #who .img-red {
-    width: 15vw;
-    height: auto;
-    position: absolute;
-    bottom: 0vw;
-    right: 15vw;
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  bottom: 0vw;
+  right: 15vw;
 }
 
 #who .img-yellow {
-    width: 15vw;
-    height: auto;
-    position: absolute;
-    top: 5vw;
-    left: 0vw;
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  top: 5vw;
+  left: 0vw;
 }
 
 .title {
-    font-family: 'Righteous', sans-serif;
-    margin-right: auto;
-    font-size: 40px;
-    width: fit-content;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-shadow: 0px 4px 4px #0000004d;
+  font-family: "Righteous", sans-serif;
+  margin-right: auto;
+  font-size: 40px;
+  width: fit-content;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-shadow: 0px 4px 4px #0000004d;
 }
 
 .info .description {
-    font-family: 'Nunito Sans', sans-serif;
-    width: 500px;
-    text-align: justify;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-indent: 3rem;
+  font-family: "Nunito Sans", sans-serif;
+  width: 500px;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-indent: 3rem;
 }
 
 .info a {
-    text-decoration: none;
-    margin-left: 10px;
-    color: var(--preto);
+  text-decoration: none;
+  margin-left: 10px;
+  color: var(--preto);
 }
 
 /* css do carrosel */
@@ -319,38 +337,38 @@ nav ul li:last-child a {
 
 /* Utilezem a class slide para customizar as tags h1, p . Exemplo: .slide h1 | .slide p | */
 .slide {
-    width: 20%;
-    padding: 20px;
-    transition: 2s;
-    text-align: justify;
+  width: 20%;
+  padding: 20px;
+  transition: 2s;
+  text-align: justify;
 }
 
 /* css para a navegação manual e automatico */
 .navigation-manual {
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 80px;
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 80px;
 }
 
 .manual-btn {
-    border: 2px solid rgba(0, 0, 0, 0.421);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
+  border: 2px solid rgba(0, 0, 0, 0.421);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .manual-btn:hover {
-    background: var(--preto);
+  background: var(--preto);
 }
 
 #radio1:checked ~ .first {
@@ -365,29 +383,29 @@ nav ul li:last-child a {
   margin-left: -40%;
 }
 
-#radio1:checked~.navigation-manual .btn1 {
-    background: var(--preto);
+#radio1:checked ~ .navigation-manual .btn1 {
+  background: var(--preto);
 }
 
-#radio2:checked~.navigation-manual .btn2 {
-    background: var(--preto);
+#radio2:checked ~ .navigation-manual .btn2 {
+  background: var(--preto);
 }
 
-#radio3:checked~.navigation-manual .btn3 {
-    background: var(--preto);
+#radio3:checked ~ .navigation-manual .btn3 {
+  background: var(--preto);
 }
 
 /* Botões */
 .btn {
-    width: 159px;
-    height: 49px;
-    border-radius: 32px;
-    background-color: var(--vermelho);
-    color: #fff;
-    border: none;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
+  width: 159px;
+  height: 49px;
+  border-radius: 32px;
+  background-color: var(--vermelho);
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .info .btn-download {
@@ -404,24 +422,23 @@ nav ul li:last-child a {
 
 /*"Grid" dos serviços*/
 .slide.first {
-    position: relative;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .slide.first h1 {
-    position: absolute;
-    top: 0;
-    left: 5%;
-    background-color: #F0F0F0;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  background-color: #f0f0f0;
 }
 
 .fakegrid {
-    display: flex;
-
-    border: 1px solid var(--azul);
-    padding: 1rem;
-    width: fit-content;
+  display: flex;
+  border: 1px solid var(--azul);
+  padding: 1rem;
+  width: fit-content;
 }
 
 .fakegrid .left-side,
@@ -461,7 +478,7 @@ nav ul li:last-child a {
 }
 
 #second-title {
-    display: inline-block;
+  display: inline-block;
 }
 
 .sub-title {
@@ -479,24 +496,33 @@ nav ul li:last-child a {
   margin-top: 2rem;
 }
 
+.dbd-1,
+.dbd-2,
+.dbd-3 {
+  position: relative;
+  padding: 12px 0 5px;
+}
+
 .method-title {
-  text-indent: 3rem;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  background-color: #f0f0f0;
 }
 
 .method-number {
-    background-color: #FF4646;
-    width: 30px;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center;
-    z-index: 0;
+  background-color: var(--vermelho);
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  z-index: 0;
 }
 
 .items-div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 
 .method-info {
   width: fit-content;
@@ -558,13 +584,13 @@ nav ul li:last-child a {
 
 /*form*/
 .form-container {
-    width: 80%;
-    height: 70vh;
-    margin: auto;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.219);
-    background-color: var(--background);
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(156, 156, 156, 0.219);
+  background-color: var(--background);
 }
 
 .form-img {
@@ -583,8 +609,8 @@ nav ul li:last-child a {
 }
 
 .form-header h2 {
-    font-family: 'Righteous', sans-serif;
-    text-align: center;
+  font-family: "Righteous", sans-serif;
+  text-align: center;
 }
 
 .slide-form {
@@ -604,37 +630,37 @@ nav ul li:last-child a {
 }
 
 .input-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: .25rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.25rem;
 }
 
 .input-group input {
-    margin: .5rem .15rem;
-    padding: .6rem 1rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px #0000001c;
-    background-color: rgb(250, 250, 247);
+  margin: 0.5rem 0.15rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #0000001c;
+  background-color: rgb(250, 250, 247);
 }
 
 .input-text textarea {
-    box-shadow: 1px 1px 5px 1px #0000001c;
-    padding: 0.7rem;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    resize: none;
-    margin: 0.4rem 0.2rem 0;
-    width: 90%;
-    height: 5rem;
-    background-color: rgb(250, 250, 247);
+  box-shadow: 1px 1px 5px 1px #0000001c;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  margin: 0.4rem 0.2rem 0;
+  width: 90%;
+  height: 5rem;
+  background-color: rgb(250, 250, 247);
 }
 
 .obs-input {
-    display: flex;
-    flex-direction: column;
-    margin-top: .25em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25em;
 }
 
 .input-box input:hover,
@@ -649,9 +675,9 @@ nav ul li:last-child a {
 
 .input-group label,
 .options-group h3 {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .options-group {
@@ -721,9 +747,9 @@ nav ul li:last-child a {
 }
 
 .submit-btn {
-    background: linear-gradient(265deg, #0000 20%, var(--vermelho-transp) 90%);
-    background-color: var(--amarelo);
-    transition: .75s ease-in;
+  background: linear-gradient(265deg, #0000 20%, var(--vermelho-transp) 90%);
+  background-color: var(--amarelo);
+  transition: 0.75s ease-in;
 }
 
 .back-btn,
@@ -903,8 +929,7 @@ nav ul li:last-child a {
 }
 
 #about p {
-    padding-top: 15px;
-    font-size: x-large;
+  padding-top: 15px;
 }
 
 #about span {
@@ -1085,10 +1110,9 @@ nav ul li:last-child a {
     justify-content: center;
   }
 
-    .navigation-manual {
-        width: 100%;
-
-    }
+  .navigation-manual {
+    width: 100%;
+  }
 
   /* .picture .img-main , .picture .img-vector{
         display: none;
@@ -1205,14 +1229,14 @@ nav ul li:last-child a {
 
   /*FEEDBACK*/
 
-    .feedbacks-container {
-        background-image: url(/assets/img/barras.png);
-        background-position: bottom;
-        background-size: cover;
-        padding-top: 4rem;
-        overflow: visible;
-        height: 90%;
-    }
+  .feedbacks-container {
+    background-image: url(/assets/img/barras.png);
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 4rem;
+    overflow: visible;
+    height: 90%;
+  }
 
   /*FAQ*/
   .resposta {
@@ -1297,6 +1321,11 @@ nav ul li:last-child a {
 
   .mobile-menu .nav-item {
     padding-top: 1.2rem;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+    color: var(--preto);
   }
 
   .mobile-menu .login-button {
@@ -1514,30 +1543,29 @@ nav ul li:last-child a {
 }
 
 #faq {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
-    width: 100%;
-    height: auto;
-    background-color: var(--vermelho);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
+  width: 100%;
+  height: auto;
+  background-color: var(--vermelho);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .footer p {
-
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .footer a {
@@ -1599,16 +1627,16 @@ nav ul li:last-child a {
 
 #close-popup {
   margin-top: 1em;
-  padding: .75em 3em; 
-  border-radius: 2em; 
-  background-color:var(--azul);
+  padding: 0.75em 3em;
+  border-radius: 2em;
+  background-color: var(--azul);
   font-weight: bold;
-  color: white; 
-  border: none; 
+  color: white;
+  border: none;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #close-popup:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
 }
